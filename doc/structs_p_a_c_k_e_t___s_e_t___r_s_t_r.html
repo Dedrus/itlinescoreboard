@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Протокол мегатабло: Структура sPACKET_SET_RSTR</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.2 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Структуры&#160;данных</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Структуры&#160;данных</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;структур&#160;данных</span></a></li>
+      <li><a href="functions.html"><span>Поля&#160;структур</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Поля данных</a>  </div>
+  <div class="headertitle">
+<h1>Структура sPACKET_SET_RSTR</h1>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="sPACKET_SET_RSTR" -->
+<p>Установка переменных RSTR. Ответ на команду установки переменных RSTR передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___r_s_t_r.html" title="Ответ на запрос переменных RSTR.">sPACKET_ANS_RSTR</a>.  
+<a href="#_details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+Поля данных</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad1bf31bc68ae5e7c195b3881581aa54"></a><!-- doxytag: member="sPACKET_SET_RSTR::mac" ref="aad1bf31bc68ae5e7c195b3881581aa54" args="" -->
+<a class="el" href="structs_m_a_c___a_d_r.html">sMAC_ADR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___r_s_t_r.html#aad1bf31bc68ae5e7c195b3881581aa54">mac</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">MAC-адрес контроллера <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5be739c2e8a6a249e4f80c9a457beca2"></a><!-- doxytag: member="sPACKET_SET_RSTR::cmd" ref="a5be739c2e8a6a249e4f80c9a457beca2" args="" -->
+<a class="el" href="type_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___r_s_t_r.html#a5be739c2e8a6a249e4f80c9a457beca2">cmd</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">команда <a class="el" href="proto_8h.html#a14d9cb70d7eeedfd038ef4acce8cc908" title="Установка переменных RSTR (25)">ETH_SET_RSTR</a>. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2284ed00f29c10d5cb60e5f6333352f"></a><!-- doxytag: member="sPACKET_SET_RSTR::type" ref="af2284ed00f29c10d5cb60e5f6333352f" args="" -->
+<a class="el" href="type_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___r_s_t_r.html#af2284ed00f29c10d5cb60e5f6333352f">type</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">тип устройства <a class="el" href="proto_8h.html#ae30ed98ab74e1769c393411965f6156c" title="Тип табло (6)">ETH_TABLO_TYPE</a>. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b5a7c5a28553a740c8cbcda42ffa826"></a><!-- doxytag: member="sPACKET_SET_RSTR::p_id" ref="a5b5a7c5a28553a740c8cbcda42ffa826" args="" -->
+<a class="el" href="type_8h.html#ad342ac907eb044443153a22f964bf0af">DWORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___r_s_t_r.html#a5b5a7c5a28553a740c8cbcda42ffa826">p_id</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">идентификатор пакета (устанавливается ПК) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae695b9506c2a12cf44c242a2d60c4f1c"></a><!-- doxytag: member="sPACKET_SET_RSTR::index" ref="ae695b9506c2a12cf44c242a2d60c4f1c" args="[RSTR_PROTO_NUM]" -->
+<a class="el" href="type_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___r_s_t_r.html#ae695b9506c2a12cf44c242a2d60c4f1c">index</a> [RSTR_PROTO_NUM]</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">индексы строк в пакете [<a class="el" href="proto_8h.html#adde378fed4da0a85f42268cddd4c6670" title="Число элементов RSTR в пакете (8)">RSTR_PROTO_NUM</a>]. Если индекс равен <b>0xFF</b>, то элемент игнорируется. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae01f9b99ba393816c66363d505c9207b"></a><!-- doxytag: member="sPACKET_SET_RSTR::profile" ref="ae01f9b99ba393816c66363d505c9207b" args="[RSTR_PROTO_NUM]" -->
+<a class="el" href="type_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___r_s_t_r.html#ae01f9b99ba393816c66363d505c9207b">profile</a> [RSTR_PROTO_NUM]</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">профили строк в пакете <a class="el" href="type_8h.html#aad3d13010bee84076abaadb3738ae111" title="Профиль отображения строки">eRPF_STR</a> [<a class="el" href="proto_8h.html#adde378fed4da0a85f42268cddd4c6670" title="Число элементов RSTR в пакете (8)">RSTR_PROTO_NUM</a>]. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9f89d6ae06183e365b6fa9abec88340"></a><!-- doxytag: member="sPACKET_SET_RSTR::rstr" ref="ae9f89d6ae06183e365b6fa9abec88340" args="[RSTR_PROTO_NUM][RSTR_LEN]" -->
+<a class="el" href="type_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___r_s_t_r.html#ae9f89d6ae06183e365b6fa9abec88340">rstr</a> [RSTR_PROTO_NUM][RSTR_LEN]</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">данные строк в пакете [<a class="el" href="proto_8h.html#adde378fed4da0a85f42268cddd4c6670" title="Число элементов RSTR в пакете (8)">RSTR_PROTO_NUM</a>][RSTR_LEN]. <br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Подробное описание</h2>
+<p>Установка переменных RSTR. Ответ на команду установки переменных RSTR передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___r_s_t_r.html" title="Ответ на запрос переменных RSTR.">sPACKET_ANS_RSTR</a>. </p>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Структуры данных</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Макросы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация по Протокол мегатабло. Последние изменения: Wed Jun 15 2016 08:57:01. Создано системой&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
+</body>
+</html>

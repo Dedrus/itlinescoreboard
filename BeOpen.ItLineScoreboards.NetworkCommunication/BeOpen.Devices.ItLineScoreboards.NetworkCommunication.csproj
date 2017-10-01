@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB4A2FBB-6818-4990-A90C-BEF8337355E6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BeOpen.Devices.ItLineScoreboards.NetworkCommunication</RootNamespace>
+    <AssemblyName>BeOpen.Devices.ItLineScoreboards.NetworkCommunication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="JetBrains.Annotations, Version=10.4.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
+      <HintPath>..\packages\JetBrains.Annotations.10.4.0\lib\net\JetBrains.Annotations.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\ScoreboardNetInfo.cs" />
+    <Compile Include="Helpers\Utils.cs" />
+    <Compile Include="Packets\Net\NetData.cs" />
+    <Compile Include="Packets\Net\SetNetPacket.cs" />
+    <Compile Include="Packets\Net\AnsNetPacket.cs" />
+    <Compile Include="Packets\Net\GetNetPacket.cs" />
+    <Compile Include="Packets\Nvnum\AnsNvnumPacket.cs" />
+    <Compile Include="Packets\Nvnum\GetNvnumPacket.cs" />
+    <Compile Include="Packets\Nvnum\SetNvnumPacket.cs" />
+    <Compile Include="Packets\Nvstr\AnsNvstrPacket.cs" />
+    <Compile Include="Packets\Nvstr\GetNvstrData.cs" />
+    <Compile Include="Packets\Nvstr\GetNvstrPacket.cs" />
+    <Compile Include="Packets\Nvstr\NvstrData.cs" />
+    <Compile Include="Packets\Nvstr\SetNvstrPacket .cs" />
+    <Compile Include="Packets\Nv\AnsNvPacket.cs" />
+    <Compile Include="Packets\Nv\GetNvPacket.cs" />
+    <Compile Include="Packets\Nv\NvData.cs" />
+    <Compile Include="Packets\Nv\SetNvPacket .cs" />
+    <Compile Include="Packets\ReceivePacketBase.cs" />
+    <Compile Include="Packets\Command.cs" />
+    <Compile Include="Packets\Rnum\AnsRnumPacket.cs" />
+    <Compile Include="Packets\Rnum\GetNumData.cs" />
+    <Compile Include="Packets\Rnum\GetRnumPacket.cs" />
+    <Compile Include="Packets\Rnum\NumData.cs" />
+    <Compile Include="Packets\Rnum\SetRnumPacket.cs" />
+    <Compile Include="Packets\SendPacketBase.cs" />
+    <Compile Include="Packets\Rstr\GetRstrData.cs" />
+    <Compile Include="Packets\Rstr\GetRstrPacket.cs" />
+    <Compile Include="Packets\Rstr\AnsRstrPacket.cs" />
+    <Compile Include="Packets\PacketBase.cs" />
+    <Compile Include="Packets\Data.cs" />
+    <Compile Include="Packets\PacketFactory.cs" />
+    <Compile Include="Packets\Search\AnswerSearchPacket.cs" />
+    <Compile Include="Packets\Search\ScoreboardInfoData.cs" />
+    <Compile Include="Packets\Search\SearchPacket.cs" />
+    <Compile Include="Data\StringMessage.cs" />
+    <Compile Include="Packets\Rstr\RstrData.cs" />
+    <Compile Include="Packets\Rstr\SetRstrPacket.cs" />
+    <Compile Include="Data\StringProfile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Data\Scoreboard.cs" />
+    <Compile Include="ScoreboardSender.cs" />
+    <Compile Include="Helpers\SubArray.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

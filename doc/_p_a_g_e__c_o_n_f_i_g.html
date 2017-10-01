@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Протокол мегатабло: Параметры пакета конфигурации.</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.2 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li class="current"><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="annotated.html"><span>Структуры&#160;данных</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<h1>Параметры пакета конфигурации. </h1>  </div>
+</div>
+<div class="contents">
+<p>Конфигурация содержит следующие поля:</p>
+<h2><a class="anchor" id="S_SAFE"></a>
+int safe</h2>
+<p>Температурный монитор. Указывает номер датчика для контроля:</p>
+<ul>
+<li>0 - выключен;</li>
+<li>1 - температура CPU (ядра);</li>
+<li>2 - температура PCB (печатной платы);</li>
+<li>3..6 - температура с внешних проводных датчиков;</li>
+<li>7 - средняя температура всех внешних проводных датчиков.</li>
+</ul>
+<dl class="note"><dt><b>Заметки:</b></dt><dd>Функционал температурного монитора не реализован.</dd></dl>
+<h2><a class="anchor" id="S_T_MIN"></a>
+short t_min</h2>
+<p>Нижняя граница контроля в градусах Цельсия, 1/16 градуса.<br/>
+ При снижении температуры на контролирующем датчике ниже этого значения, табло выключается с периодической индикацией сообщения "COLD".<br/>
+ Рекомендуется задавать не ниже -40C.<br/>
+ Пример расчета для температуры "-40C": t_min = -40 * 16 = -640. </p>
+<dl class="note"><dt><b>Заметки:</b></dt><dd>Функционал температурного монитора не реализован.</dd></dl>
+<h2><a class="anchor" id="S_T_MAX"></a>
+short t_max</h2>
+<p>Верхняя граница контроля в градусах Цельсия, 1/16 градуса.<br/>
+ При превышении температуры на контролирующем датчике выше этого значения, табло выключается с периодической индикацией сообщения "HOT".<br/>
+ Рекомендуется задавать не выше +85C.<br/>
+ Пример расчета для температуры "+85C": t_max = 85 * 16 = 1360. </p>
+<dl class="note"><dt><b>Заметки:</b></dt><dd>Функционал температурного монитора не реализован.</dd></dl>
+<h2><a class="anchor" id="S_TO_WATCHDOG"></a>
+int to_watchdog</h2>
+<p>Сторожевой таймер в секундах. Если в течении установленного времени табло не произведет обмен с управляющим ПК, то табло автоматически перезагрузится. </p>
+<dl class="warning"><dt><b>Предупреждения:</b></dt><dd>При значениях менее 600 секунд сторожевой таймер не активен!</dd></dl>
+<h2><a class="anchor" id="S_AUTOBRIGHT"></a>
+DWORD autobright</h2>
+<p>Автоматическое управление яркостью.<br/>
+ Позволяет отключать управление яркостью табло по данным со встроенного датчика освещенности. См. <a class="el" href="type_8h.html#ab0f593fb813c1cfbb81893d7c40dbb35">eAUTOBRIGHT</a>.</p>
+<h2><a class="anchor" id="S_TO_TIMER_SIREN"></a>
+DWORD to_timer_siren</h2>
+<p>Таймаут сирены для таймеров в миллисекундах. </p>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Структуры данных</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Макросы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация по Протокол мегатабло. Последние изменения: Wed Jun 15 2016 08:57:01. Создано системой&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Протокол мегатабло: Исходный файл src/type.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.2 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="annotated.html"><span>Структуры&#160;данных</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<h1>src/type.h</h1>  </div>
+</div>
+<div class="contents">
+<a href="type_8h.html">См. документацию.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/**************************************************************************/</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#ifndef __TYPE_H__</span>
+<a name="l00011"></a>00011 <span class="preprocessor"></span><span class="preprocessor">#define __TYPE_H__</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span>
+<a name="l00013"></a>00013 <span class="comment">/******************************************************************************</span>
+<a name="l00014"></a>00014 <span class="comment"> *  DEFINE</span>
+<a name="l00015"></a>00015 <span class="comment"> *****************************************************************************/</span>
+<a name="l00016"></a><a class="code" href="type_8h.html#a4ae1dab0fb4b072a66584546209e7d58">00016</a> <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>   <a class="code" href="type_8h.html#a4ae1dab0fb4b072a66584546209e7d58" title="Беззнаковый целый 8-бит.">BYTE</a>;                   
+<a name="l00017"></a><a class="code" href="type_8h.html#a197942eefa7db30960ae396d68339b97">00017</a> <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>  <a class="code" href="type_8h.html#a197942eefa7db30960ae396d68339b97" title="Беззнаковый целый 16-бит.">WORD</a>;                   
+<a name="l00018"></a><a class="code" href="type_8h.html#ad342ac907eb044443153a22f964bf0af">00018</a> <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>   <a class="code" href="type_8h.html#ad342ac907eb044443153a22f964bf0af" title="Беззнаковый целый 32-бита.">DWORD</a>;                  
+<a name="l00019"></a><a class="code" href="type_8h.html#a7b003f1fb699d578eb0e5b87ed1fb38a">00019</a> <span class="keyword">typedef</span> <span class="keyword">volatile</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>  <a class="code" href="type_8h.html#a7b003f1fb699d578eb0e5b87ed1fb38a" title="Беззнаковый целый 32-бита.">tTIMER</a>;         
+<a name="l00020"></a>00020 
+<a name="l00021"></a>00021 <span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00022"></a>00022 <span class="comment">// Определения</span>
+<a name="l00023"></a>00023 <span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00025"></a><a class="code" href="type_8h.html#ae255577cd463921d0854251e8283182d">00025</a> <span class="comment"></span><span class="preprocessor">#define ETH_TABLO_CONTROL_PORT  (5001)</span>
+<a name="l00026"></a>00026 <span class="preprocessor"></span>
+<a name="l00027"></a><a class="code" href="type_8h.html#a834e9a379307f869a10f4da078be5786">00027</a> <span class="preprocessor">#define NAME_SIZE     (32)      //!&lt; Длинна имени табло (32)</span>
+<a name="l00028"></a><a class="code" href="type_8h.html#a95c3d888fafde011ea18273e520d99e0">00028</a> <span class="preprocessor"></span><span class="preprocessor">#define RNUM_SIZE     (256)     //!&lt; Число переменных типа NUM (256)</span>
+<a name="l00029"></a><a class="code" href="type_8h.html#ad07aca7eb7c68ba0df94d412b647b738">00029</a> <span class="preprocessor"></span><span class="preprocessor">#define CNUM_SIZE     (256)     //!&lt; Число переменных типа CNUM (256)</span>
+<a name="l00030"></a><a class="code" href="type_8h.html#ab80adf6ec8ec08190630fe87598c9877">00030</a> <span class="preprocessor"></span><span class="preprocessor">#define NVNUM_SIZE    (256)     //!&lt; Число переменных типа NVNUM (256)</span>
+<a name="l00031"></a><a class="code" href="type_8h.html#a80512af7f20906bd62769901f855d461">00031</a> <span class="preprocessor"></span><span class="preprocessor">#define RSTR_NUM      (32)      //!&lt; Число переменных типа RSTR (32)</span>
+<a name="l00032"></a><a class="code" href="type_8h.html#ad40e478466b64b8e22a37ff1b518608d">00032</a> <span class="preprocessor"></span><span class="preprocessor">#define RSTR_SIZE     (128)     //!&lt; Размер переменной типа RSTR (128)</span>
+<a name="l00033"></a><a class="code" href="type_8h.html#a1ff6d70f4aeaba4574afcedee4da167b">00033</a> <span class="preprocessor"></span><span class="preprocessor">#define CSTR_NUM      (32)      //!&lt; Число переменных типа CSTR (32)</span>
+<a name="l00034"></a><a class="code" href="type_8h.html#a6004c13f37c18c6a78194024871023ba">00034</a> <span class="preprocessor"></span><span class="preprocessor">#define CSTR_SIZE     (128)     //!&lt; Размер переменной типа CSTR (128)</span>
+<a name="l00035"></a><a class="code" href="type_8h.html#a954865c5e1f7795dd39917d7045afc42">00035</a> <span class="preprocessor"></span><span class="preprocessor">#define NVSTR_NUM     (2)       //!&lt; Число переменных типа NVSTR (2)</span>
+<a name="l00036"></a><a class="code" href="type_8h.html#ae8cd35da93c2d47de7cef4ebaffa77a5">00036</a> <span class="preprocessor"></span><span class="preprocessor">#define NVSTR_SIZE    (1024)    //!&lt; Размер переменной типа NVSTR (1024)</span>
+<a name="l00037"></a><a class="code" href="type_8h.html#a1c7c6e4d297f71543388ab3581612010">00037</a> <span class="preprocessor"></span><span class="preprocessor">#define TIMER_NUM     (64)      //!&lt; Число переменных типа TIMER (64)</span>
+<a name="l00038"></a>00038 <span class="preprocessor"></span>
+<a name="l00039"></a><a class="code" href="type_8h.html#a49e32a8baf8cd548a01e7f2cae552a3c">00039</a> <span class="preprocessor">#define TO_UDP_DEBUG  (30000UL) //!&lt; Время вывода отладочных сообщений, мс. (30 с).</span>
+<a name="l00040"></a>00040 <span class="preprocessor"></span>
+<a name="l00041"></a>00041 <span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00045"></a>00045 <span class="comment"></span><span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00046"></a><a class="code" href="structs_m_a_c___a_d_r.html">00046</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structs_m_a_c___a_d_r.html" title="MAC-адрес Подробнее о MAC-адресе Адреса MAC и IP..">sMAC_ADR</a>
+<a name="l00047"></a>00047 {
+<a name="l00048"></a>00048   <span class="keyword">union</span>
+<a name="l00049"></a>00049   {
+<a name="l00050"></a>00050     <span class="keyword">struct</span>
+<a name="l00051"></a>00051     {
+<a name="l00052"></a><a class="code" href="structs_m_a_c___a_d_r.html#a8541e8514ad636005d85ce6b8ccbcfb3">00052</a>       <a class="code" href="type_8h.html#a197942eefa7db30960ae396d68339b97" title="Беззнаковый целый 16-бит.">WORD</a>    <a class="code" href="structs_m_a_c___a_d_r.html#a8541e8514ad636005d85ce6b8ccbcfb3" title="старшие 2 байта формата ID-ID:SR-SR-SR-SR.">id</a>;               
+<a name="l00053"></a><a class="code" href="structs_m_a_c___a_d_r.html#a37681950001fd9d186224c4a3f2a5025">00053</a>       <a class="code" href="type_8h.html#ad342ac907eb044443153a22f964bf0af" title="Беззнаковый целый 32-бита.">DWORD</a>   <a class="code" href="structs_m_a_c___a_d_r.html#a37681950001fd9d186224c4a3f2a5025" title="младшие 4 байта формата ID-ID:SR-SR-SR-SR.">serial</a>;           
+<a name="l00054"></a>00054     };
+<a name="l00055"></a>00055     <span class="keyword">struct</span>
+<a name="l00056"></a>00056     {
+<a name="l00057"></a><a class="code" href="structs_m_a_c___a_d_r.html#adf20352f4265a745b4022077105ea48f">00057</a>       <a class="code" href="type_8h.html#ad342ac907eb044443153a22f964bf0af" title="Беззнаковый целый 32-бита.">DWORD</a>   <a class="code" href="structs_m_a_c___a_d_r.html#adf20352f4265a745b4022077105ea48f" title="для быстрого сравнения адресов">dw</a>;               
+<a name="l00058"></a><a class="code" href="structs_m_a_c___a_d_r.html#a852b7e27c2d0c78a3a44d7d4989bc4fb">00058</a>       <a class="code" href="type_8h.html#a197942eefa7db30960ae396d68339b97" title="Беззнаковый целый 16-бит.">WORD</a>    <a class="code" href="structs_m_a_c___a_d_r.html#a852b7e27c2d0c78a3a44d7d4989bc4fb" title="для быстрого сравнения адресов">w</a>;                
+<a name="l00059"></a>00059     };
+<a name="l00060"></a><a class="code" href="structs_m_a_c___a_d_r.html#af390a3765154b0019f4ec3705972b100">00060</a>     <a class="code" href="type_8h.html#a4ae1dab0fb4b072a66584546209e7d58" title="Беззнаковый целый 8-бит.">BYTE</a>      <a class="code" href="structs_m_a_c___a_d_r.html#af390a3765154b0019f4ec3705972b100" title="побайтовый доступ">a</a>[6];             
+<a name="l00061"></a>00061   };
+<a name="l00062"></a>00062 } <a class="code" href="structs_m_a_c___a_d_r.html" title="MAC-адрес Подробнее о MAC-адресе Адреса MAC и IP..">sMAC_ADR</a>;
+<a name="l00063"></a>00063 
+<a name="l00064"></a>00064 <span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00068"></a>00068 <span class="comment"></span><span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00069"></a><a class="code" href="structs_i_p___a_d_r.html">00069</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structs_i_p___a_d_r.html" title="IP-адрес (или маска, шлюз) Подробнее об IP-адресе Адреса MAC и IP..">sIP_ADR</a>
+<a name="l00070"></a>00070 {
+<a name="l00071"></a>00071   <span class="keyword">union</span>
+<a name="l00072"></a>00072   {
+<a name="l00073"></a><a class="code" href="structs_i_p___a_d_r.html#a7abe33adc5f20624741eb08b92c17536">00073</a>     <a class="code" href="type_8h.html#ad342ac907eb044443153a22f964bf0af" title="Беззнаковый целый 32-бита.">DWORD</a>     <a class="code" href="structs_i_p___a_d_r.html#a7abe33adc5f20624741eb08b92c17536" title="для быстрого сравнения адресов">ip</a>;               
+<a name="l00074"></a><a class="code" href="structs_i_p___a_d_r.html#af15bca91261ff1e4c9563150aab8aab5">00074</a>     <a class="code" href="type_8h.html#a4ae1dab0fb4b072a66584546209e7d58" title="Беззнаковый целый 8-бит.">BYTE</a>      <a class="code" href="structs_i_p___a_d_r.html#af15bca91261ff1e4c9563150aab8aab5" title="побайтовый доступ">a</a>[4];             
+<a name="l00075"></a>00075   };
+<a name="l00076"></a>00076 } <a class="code" href="structs_i_p___a_d_r.html" title="IP-адрес (или маска, шлюз) Подробнее об IP-адресе Адреса MAC и IP..">sIP_ADR</a>;
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078 <span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00081"></a>00081 <span class="comment"></span><span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00082"></a><a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111">00082</a> <span class="keyword">enum</span> <a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111" title="Профиль отображения строки">eRPF_STR</a>
+<a name="l00083"></a>00083 {
+<a name="l00084"></a><a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111a2e99c6ce00e9bfbe45d017055a518e07">00084</a>   <a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111a2e99c6ce00e9bfbe45d017055a518e07" title="Профиль не определен (0) [из конфигурации].">PRF_STR_NONE</a> = 0,             
+<a name="l00085"></a><a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111ac7cacd833a55dbd4346da3edee7137e1">00085</a>   <a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111ac7cacd833a55dbd4346da3edee7137e1" title="Выравнивание по левому краю (1)">PRF_STR_LEFT</a>,                 
+<a name="l00086"></a><a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111a6462b65b9dfb3d019db627dec172c20b">00086</a>   <a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111a6462b65b9dfb3d019db627dec172c20b" title="Выравнивание по центру (2)">PRF_STR_CENTER</a>,               
+<a name="l00087"></a><a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111a0f0052ff3469299c7f3bc093792836d4">00087</a>   <a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111a0f0052ff3469299c7f3bc093792836d4" title="Выравнивание по правому краю (3)">PRF_STR_RIGHT</a>,                
+<a name="l00088"></a><a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111a310078b165518b9c94b1233b927b7302">00088</a>   <a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111a310078b165518b9c94b1233b927b7302" title="Выравнивание по левому краю с горизонтальным скроллингом (4)">PRF_STR_LSCROLL</a>,              
+<a name="l00089"></a><a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111a572a06ed6b571e6582f5f0ee3996b887">00089</a>   <a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111a572a06ed6b571e6582f5f0ee3996b887" title="Выравнивание по центру с горизонтальным скроллингом (5)">PRF_STR_CSCROLL</a>,              
+<a name="l00090"></a><a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111ad7ff52d8c5f5e62cf93c27d115cd4233">00090</a>   <a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111ad7ff52d8c5f5e62cf93c27d115cd4233" title="Выравнивание по правому краю с горизонтальным скроллингом (6)">PRF_STR_RSCROLL</a>,              
+<a name="l00091"></a><a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111abb9af7ef3f915ec61e7328a00c7c76f2">00091</a>   <a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111abb9af7ef3f915ec61e7328a00c7c76f2" title="Бегущая строка с низкой скоростью (7)">PRF_STR_LOW</a>,                  
+<a name="l00092"></a><a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111a0ad937281066c4569fbb73ebc0712b80">00092</a>   <a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111a0ad937281066c4569fbb73ebc0712b80" title="Бегущая строка со средней скоростью (8)">PRF_STR_MEDIUM</a>,               
+<a name="l00093"></a><a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111ad7cf9189f702f4d25a1524fd88881f4a">00093</a>   <a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111ad7cf9189f702f4d25a1524fd88881f4a" title="Бегущая строка с высокой скоростью (9)">PRF_STR_HIGH</a>,                 
+<a name="l00094"></a><a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111a2bf1577e66dcfb751efa07fce2a6d618">00094</a>   <a class="code" href="type_8h.html#aad3d13010bee84076abaadb3738ae111a2bf1577e66dcfb751efa07fce2a6d618" title="Бегущая строка с заданной скоростью [не используется].">PRF_STR_SPEED</a>,                
+<a name="l00095"></a>00095 };
+<a name="l00096"></a>00096 
+<a name="l00097"></a>00097 <span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00100"></a>00100 <span class="comment"></span><span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00101"></a><a class="code" href="type_8h.html#a72c89c926f2338f19f26188507c050f7">00101</a> <span class="keyword">enum</span> <a class="code" href="type_8h.html#a72c89c926f2338f19f26188507c050f7" title="Состояния/команды таймера">eTIMER_STATE</a>
+<a name="l00102"></a>00102 {
+<a name="l00103"></a><a class="code" href="type_8h.html#a72c89c926f2338f19f26188507c050f7a464147d1f8add61dd297c6571f699fe4">00103</a>   <a class="code" href="type_8h.html#a72c89c926f2338f19f26188507c050f7a464147d1f8add61dd297c6571f699fe4" title="Таймер остановлен / Остановить таймер (0)">TIMER_STATE_STOP</a> = 0,         
+<a name="l00104"></a><a class="code" href="type_8h.html#a72c89c926f2338f19f26188507c050f7ab5a4e5a7978ceaf7b2af6bf9ea586c06">00104</a>   <a class="code" href="type_8h.html#a72c89c926f2338f19f26188507c050f7ab5a4e5a7978ceaf7b2af6bf9ea586c06" title="Таймер активен / Запустить таймер (1)">TIMER_STATE_RUN</a>,              
+<a name="l00105"></a><a class="code" href="type_8h.html#a72c89c926f2338f19f26188507c050f7ab22ac470012c5322a749670e4fadd828">00105</a>   <a class="code" href="type_8h.html#a72c89c926f2338f19f26188507c050f7ab22ac470012c5322a749670e4fadd828" title="... / Перезапустить таймер (2)">TIMER_STATE_RESTART</a>,          
+<a name="l00106"></a>00106 };
+<a name="l00107"></a>00107 
+<a name="l00108"></a>00108 <span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00111"></a>00111 <span class="comment"></span><span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00112"></a><a class="code" href="structs_t_i_m_e_r.html">00112</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structs_t_i_m_e_r.html" title="Структура данных таймера">sTIMER</a>
+<a name="l00113"></a>00113 {
+<a name="l00114"></a><a class="code" href="structs_t_i_m_e_r.html#a75af4b226a1b22af585873c1e2fb564a">00114</a>   <a class="code" href="type_8h.html#ad342ac907eb044443153a22f964bf0af" title="Беззнаковый целый 32-бита.">DWORD</a>       <a class="code" href="structs_t_i_m_e_r.html#a75af4b226a1b22af585873c1e2fb564a" title="Текущее значение таймера">current</a>;          
+<a name="l00115"></a><a class="code" href="structs_t_i_m_e_r.html#ac4e73c9c82340e23a9646e05df4774c1">00115</a>   <a class="code" href="type_8h.html#ad342ac907eb044443153a22f964bf0af" title="Беззнаковый целый 32-бита.">DWORD</a>       <a class="code" href="structs_t_i_m_e_r.html#ac4e73c9c82340e23a9646e05df4774c1" title="Начальное значение таймера">from</a>;             
+<a name="l00116"></a><a class="code" href="structs_t_i_m_e_r.html#a58d76066f4dc0abf688a91605cff4023">00116</a>   <a class="code" href="type_8h.html#ad342ac907eb044443153a22f964bf0af" title="Беззнаковый целый 32-бита.">DWORD</a>       <a class="code" href="structs_t_i_m_e_r.html#a58d76066f4dc0abf688a91605cff4023" title="Конечное значение таймера">to</a>;               
+<a name="l00117"></a><a class="code" href="structs_t_i_m_e_r.html#a920e23fa16eeccc809026699a8c2c560">00117</a>   <a class="code" href="type_8h.html#a4ae1dab0fb4b072a66584546209e7d58" title="Беззнаковый целый 8-бит.">BYTE</a>        <a class="code" href="structs_t_i_m_e_r.html#a920e23fa16eeccc809026699a8c2c560" title="Текущее состояние таймера">cur_state</a>;        
+<a name="l00118"></a><a class="code" href="structs_t_i_m_e_r.html#aa88f677ce3edd882e8f6f782d3aad255">00118</a>   <a class="code" href="type_8h.html#a4ae1dab0fb4b072a66584546209e7d58" title="Беззнаковый целый 8-бит.">BYTE</a>        <a class="code" href="structs_t_i_m_e_r.html#aa88f677ce3edd882e8f6f782d3aad255" title="Новое состояние таймера">new_state</a>;        
+<a name="l00119"></a>00119   <span class="keyword">union</span>
+<a name="l00120"></a>00120   {
+<a name="l00121"></a><a class="code" href="structs_t_i_m_e_r.html#af6cbe8557a0f1e147b4ebb4989fb37d3">00121</a>     <a class="code" href="type_8h.html#a197942eefa7db30960ae396d68339b97" title="Беззнаковый целый 16-бит.">WORD</a>      <a class="code" href="structs_t_i_m_e_r.html#af6cbe8557a0f1e147b4ebb4989fb37d3" title="Флаги таймера">flags</a>;            
+<a name="l00122"></a>00122     <span class="keyword">struct</span>
+<a name="l00123"></a>00123     {
+<a name="l00124"></a><a class="code" href="structs_t_i_m_e_r.html#aba035d7122ed3abbd0bcb434ba366e99">00124</a>       <a class="code" href="type_8h.html#a197942eefa7db30960ae396d68339b97" title="Беззнаковый целый 16-бит.">WORD</a>    <a class="code" href="structs_t_i_m_e_r.html#aba035d7122ed3abbd0bcb434ba366e99" title="Автоматический перезапуск (0)">f_restart</a>:1;      
+<a name="l00125"></a><a class="code" href="structs_t_i_m_e_r.html#afca7136bb86f57a12b5c31627c1db2c4">00125</a>       <a class="code" href="type_8h.html#a197942eefa7db30960ae396d68339b97" title="Беззнаковый целый 16-бит.">WORD</a>    <a class="code" href="structs_t_i_m_e_r.html#afca7136bb86f57a12b5c31627c1db2c4" title="Управление сиреной (1)">f_siren</a>:1;        
+<a name="l00126"></a><a class="code" href="structs_t_i_m_e_r.html#a0888faa547f7709d5f8fb2f5be9c6347">00126</a>       <a class="code" href="type_8h.html#a197942eefa7db30960ae396d68339b97" title="Беззнаковый целый 16-бит.">WORD</a>    <a class="code" href="structs_t_i_m_e_r.html#a0888faa547f7709d5f8fb2f5be9c6347">f_hide</a>:1;         
+<a name="l00127"></a>00127 
+<a name="l00128"></a>00128       <a class="code" href="type_8h.html#a197942eefa7db30960ae396d68339b97" title="Беззнаковый целый 16-бит.">WORD</a>    f_hide_inactive:1;
+<a name="l00129"></a><a class="code" href="structs_t_i_m_e_r.html#ae4f6a394f40f5645037b334307779077">00129</a>       <a class="code" href="type_8h.html#a197942eefa7db30960ae396d68339b97" title="Беззнаковый целый 16-бит.">WORD</a>    <a class="code" href="structs_t_i_m_e_r.html#ae4f6a394f40f5645037b334307779077" title="Подчиненный таймер (4)">f_slave</a>:1;        
+<a name="l00130"></a><a class="code" href="structs_t_i_m_e_r.html#a3968f46ce0326f7177cd0dc66930b43d">00130</a>       <a class="code" href="type_8h.html#a197942eefa7db30960ae396d68339b97" title="Беззнаковый целый 16-бит.">WORD</a>    <a class="code" href="structs_t_i_m_e_r.html#a3968f46ce0326f7177cd0dc66930b43d" title="Управляющий таймер (7-5)">f_master</a>:3;       
+<a name="l00131"></a><a class="code" href="structs_t_i_m_e_r.html#ad662916a832cf9e21327b185a511d6a5">00131</a>       <a class="code" href="type_8h.html#a197942eefa7db30960ae396d68339b97" title="Беззнаковый целый 16-бит.">WORD</a>    <a class="code" href="structs_t_i_m_e_r.html#ad662916a832cf9e21327b185a511d6a5" title="Резерв (15-8)">f_reserv</a>:8;       
+<a name="l00132"></a>00132     };
+<a name="l00133"></a>00133   };
+<a name="l00134"></a>00134 } <a class="code" href="structs_t_i_m_e_r.html" title="Структура данных таймера">sTIMER</a>;
+<a name="l00135"></a>00135 
+<a name="l00136"></a>00136 <span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00139"></a>00139 <span class="comment"></span><span class="comment">//-----------------------------------------------------------------------------</span>
+<a name="l00140"></a><a class="code" href="type_8h.html#ab0f593fb813c1cfbb81893d7c40dbb35">00140</a> <span class="keyword">enum</span> <a class="code" href="type_8h.html#ab0f593fb813c1cfbb81893d7c40dbb35" title="Автоматическое управление яркостью">eAUTOBRIGHT</a>
+<a name="l00141"></a>00141 {
+<a name="l00142"></a><a class="code" href="type_8h.html#ab0f593fb813c1cfbb81893d7c40dbb35a687d1ec0e17b171b4e08918afbbc6c41">00142</a>   <a class="code" href="type_8h.html#ab0f593fb813c1cfbb81893d7c40dbb35a687d1ec0e17b171b4e08918afbbc6c41" title="Автояркость включена (0)">AUTOBRIGHT_ON</a> = 0,            
+<a name="l00143"></a><a class="code" href="type_8h.html#ab0f593fb813c1cfbb81893d7c40dbb35ac94ae53d884b61ae8b30b2699f270ccf">00143</a>   <a class="code" href="type_8h.html#ab0f593fb813c1cfbb81893d7c40dbb35ac94ae53d884b61ae8b30b2699f270ccf" title="Автояркость выключена (1)">AUTOBRIGHT_OFF</a>,               
+<a name="l00144"></a>00144 };
+<a name="l00145"></a>00145 
+<a name="l00146"></a>00146 <span class="comment">/**************************************************************************/</span>
+<a name="l00296"></a>00296 <span class="preprocessor">#endif // __TYPE_H__</span>
+<a name="l00297"></a>00297 <span class="preprocessor"></span><span class="comment">/******************************************************************************</span>
+<a name="l00298"></a>00298 <span class="comment"> * КОНЕЦ ФАЙЛА</span>
+<a name="l00299"></a>00299 <span class="comment"> *****************************************************************************/</span>
+</pre></div></div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Структуры данных</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Макросы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация по Протокол мегатабло. Последние изменения: Wed Jun 15 2016 08:57:01. Создано системой&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
+</body>
+</html>

@@ -1,0 +1,743 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Протокол мегатабло: Файл src/proto.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.2 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="annotated.html"><span>Структуры&#160;данных</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Структуры данных</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#enum-members">Перечисления</a>  </div>
+  <div class="headertitle">
+<h1>Файл src/proto.h</h1>  </div>
+</div>
+<div class="contents">
+
+<p>Заголовочный файл для протокола обмена по Ethernet.  
+<a href="#_details">Подробнее...</a></p>
+
+<p><a href="proto_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Структуры данных</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p___t_i_m_e_r.html">sP_TIMER</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура данных для TIMER.  <a href="structs_p___t_i_m_e_r.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_c_o_m_m_a_n_d.html">sCOMMAND</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Общий вид UDP-пакетов <a class="el" href="_p_a_g_e__c_o_m_m_a_n_d.html">Общий вид UDP-пакетов.</a>.  <a href="structs_c_o_m_m_a_n_d.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___c_m_d___s_e_a_r_c_h.html">sPACKET_CMD_SEARCH</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда поиска. Ответ на команду поиска передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___i_n_f_o.html" title="Ответ на команду запроса информации о табло.">sPACKET_ANS_INFO</a>.  <a href="structs_p_a_c_k_e_t___c_m_d___s_e_a_r_c_h.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___a_n_s___i_n_f_o.html">sPACKET_ANS_INFO</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на команду запроса информации о табло.  <a href="structs_p_a_c_k_e_t___a_n_s___i_n_f_o.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___g_e_t___i_n_f_o.html">sPACKET_GET_INFO</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос информации о табло. Ответ на команду запроса информации о табло передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___i_n_f_o.html" title="Ответ на команду запроса информации о табло.">sPACKET_ANS_INFO</a>.  <a href="structs_p_a_c_k_e_t___g_e_t___i_n_f_o.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___g_e_t___n_e_t.html">sPACKET_GET_NET</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос сетевых настроек. Ответ на команду запроса сетевых настроек передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___n_e_t.html" title="Ответ на запрос сетевых настроек.">sPACKET_ANS_NET</a>.  <a href="structs_p_a_c_k_e_t___g_e_t___n_e_t.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___a_n_s___n_e_t.html">sPACKET_ANS_NET</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос сетевых настроек.  <a href="structs_p_a_c_k_e_t___a_n_s___n_e_t.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___n_e_t.html">sPACKET_SET_NET</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка сетевых настроек. Ответ на команду установки сетевых настроек передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___n_e_t.html" title="Ответ на запрос сетевых настроек.">sPACKET_ANS_NET</a>.  <a href="structs_p_a_c_k_e_t___s_e_t___n_e_t.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___g_e_t___n_v.html">sPACKET_GET_NV</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос энергонезависимых данных. Ответ на команду запроса энергонезависимых данных передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___n_v.html" title="Ответ на запрос энергонезависимых данных.">sPACKET_ANS_NV</a>.  <a href="structs_p_a_c_k_e_t___g_e_t___n_v.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___a_n_s___n_v.html">sPACKET_ANS_NV</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос энергонезависимых данных.  <a href="structs_p_a_c_k_e_t___a_n_s___n_v.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___n_v.html">sPACKET_SET_NV</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка энергонезависимых данных. Ответ на команду установки энергонезависимых данных передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___n_v.html" title="Ответ на запрос энергонезависимых данных.">sPACKET_ANS_NV</a>.  <a href="structs_p_a_c_k_e_t___s_e_t___n_v.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___g_e_t___c_o_n_f_i_g.html">sPACKET_GET_CONFIG</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос конфигурации табло. Ответ на команду запроса конфигурации табло передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___c_o_n_f_i_g.html" title="Ответ на запрос конфигурации табло. Подробнее о параметрах Параметры пакета конфигурации..">sPACKET_ANS_CONFIG</a>.  <a href="structs_p_a_c_k_e_t___g_e_t___c_o_n_f_i_g.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___a_n_s___c_o_n_f_i_g.html">sPACKET_ANS_CONFIG</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос конфигурации табло. Подробнее о параметрах <a class="el" href="_p_a_g_e__c_o_n_f_i_g.html">Параметры пакета конфигурации.</a>.  <a href="structs_p_a_c_k_e_t___a_n_s___c_o_n_f_i_g.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___c_o_n_f_i_g.html">sPACKET_SET_CONFIG</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка конфигурации табло. Ответ на команду установки конфигурации табло передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___c_o_n_f_i_g.html" title="Ответ на запрос конфигурации табло. Подробнее о параметрах Параметры пакета конфигурации..">sPACKET_ANS_CONFIG</a>. Подробнее о параметрах <a class="el" href="_p_a_g_e__c_o_n_f_i_g.html">Параметры пакета конфигурации.</a>.  <a href="structs_p_a_c_k_e_t___s_e_t___c_o_n_f_i_g.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___g_e_t___d_a_t_e_t_i_m_e.html">sPACKET_GET_DATETIME</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос текущего времени. Ответ на запрос текущего времени передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___d_a_t_e_t_i_m_e.html" title="Ответ на запрос текущего времени.">sPACKET_ANS_DATETIME</a>.  <a href="structs_p_a_c_k_e_t___g_e_t___d_a_t_e_t_i_m_e.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___a_n_s___d_a_t_e_t_i_m_e.html">sPACKET_ANS_DATETIME</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос текущего времени.  <a href="structs_p_a_c_k_e_t___a_n_s___d_a_t_e_t_i_m_e.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___d_a_t_e_t_i_m_e.html">sPACKET_SET_DATETIME</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка текущего времени. Ответ на команду установки текущего времени передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___d_a_t_e_t_i_m_e.html" title="Ответ на запрос текущего времени.">sPACKET_ANS_DATETIME</a>.  <a href="structs_p_a_c_k_e_t___s_e_t___d_a_t_e_t_i_m_e.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___d_a_t_a.html">sPACKET_SET_DATA</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка данных [не используется].  <a href="structs_p_a_c_k_e_t___s_e_t___d_a_t_a.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___a_n_s___d_a_t_a.html">sPACKET_ANS_DATA</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ установки данных [не используется].  <a href="structs_p_a_c_k_e_t___a_n_s___d_a_t_a.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___u_d_p___d_e_b_u_g.html">sPACKET_UDP_DEBUG</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка режима отладки.  <a href="structs_p_a_c_k_e_t___u_d_p___d_e_b_u_g.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___g_e_t___n_v_s_t_r.html">sPACKET_GET_NVSTR</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос переменных NVSTR. Ответ на команду запроса переменных NVSTR передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___n_v_s_t_r.html" title="Ответ на запрос переменных NVSTR.">sPACKET_ANS_NVSTR</a>.  <a href="structs_p_a_c_k_e_t___g_e_t___n_v_s_t_r.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___a_n_s___n_v_s_t_r.html">sPACKET_ANS_NVSTR</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос переменных NVSTR.  <a href="structs_p_a_c_k_e_t___a_n_s___n_v_s_t_r.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___n_v_s_t_r.html">sPACKET_SET_NVSTR</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка переменных NVSTR. Ответ на команду установки переменных NVSTR передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___n_v_s_t_r.html" title="Ответ на запрос переменных NVSTR.">sPACKET_ANS_NVSTR</a>.  <a href="structs_p_a_c_k_e_t___s_e_t___n_v_s_t_r.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___g_e_t___r_s_t_r.html">sPACKET_GET_RSTR</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос переменных RSTR. Ответ на команду запроса переменных RSTR передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___r_s_t_r.html" title="Ответ на запрос переменных RSTR.">sPACKET_ANS_RSTR</a>.  <a href="structs_p_a_c_k_e_t___g_e_t___r_s_t_r.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___a_n_s___r_s_t_r.html">sPACKET_ANS_RSTR</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос переменных RSTR.  <a href="structs_p_a_c_k_e_t___a_n_s___r_s_t_r.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___r_s_t_r.html">sPACKET_SET_RSTR</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка переменных RSTR. Ответ на команду установки переменных RSTR передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___r_s_t_r.html" title="Ответ на запрос переменных RSTR.">sPACKET_ANS_RSTR</a>.  <a href="structs_p_a_c_k_e_t___s_e_t___r_s_t_r.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___g_e_t___c_s_t_r.html">sPACKET_GET_CSTR</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос переменных CSTR. Ответ на команду запроса переменных CSTR передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___c_s_t_r.html" title="Ответ на запрос переменных CSTR.">sPACKET_ANS_CSTR</a>.  <a href="structs_p_a_c_k_e_t___g_e_t___c_s_t_r.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___a_n_s___c_s_t_r.html">sPACKET_ANS_CSTR</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос переменных CSTR.  <a href="structs_p_a_c_k_e_t___a_n_s___c_s_t_r.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___g_e_t___n_v_n_u_m.html">sPACKET_GET_NVNUM</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос переменных NVNUM. Ответ на команду запроса переменных NVNUM передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___n_v_n_u_m.html" title="Ответ на запрос переменных NVNUM.">sPACKET_ANS_NVNUM</a>.  <a href="structs_p_a_c_k_e_t___g_e_t___n_v_n_u_m.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___a_n_s___n_v_n_u_m.html">sPACKET_ANS_NVNUM</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос переменных NVNUM.  <a href="structs_p_a_c_k_e_t___a_n_s___n_v_n_u_m.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___n_v_n_u_m.html">sPACKET_SET_NVNUM</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка переменных NVNUM. Ответ на команду установки переменных NVNUM передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___n_v_n_u_m.html" title="Ответ на запрос переменных NVNUM.">sPACKET_ANS_NVNUM</a>.  <a href="structs_p_a_c_k_e_t___s_e_t___n_v_n_u_m.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___g_e_t___r_n_u_m.html">sPACKET_GET_RNUM</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос переменных RNUM. Ответ на команду запроса переменных RNUM передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___r_n_u_m.html" title="Ответ на запрос переменных RNUM.">sPACKET_ANS_RNUM</a>.  <a href="structs_p_a_c_k_e_t___g_e_t___r_n_u_m.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___a_n_s___r_n_u_m.html">sPACKET_ANS_RNUM</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос переменных RNUM.  <a href="structs_p_a_c_k_e_t___a_n_s___r_n_u_m.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___r_n_u_m.html">sPACKET_SET_RNUM</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка переменных RNUM. Ответ на команду установки переменных RNUM передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___r_n_u_m.html" title="Ответ на запрос переменных RNUM.">sPACKET_ANS_RNUM</a>.  <a href="structs_p_a_c_k_e_t___s_e_t___r_n_u_m.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___g_e_t___c_n_u_m.html">sPACKET_GET_CNUM</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос переменных CNUM. Ответ на команду запроса переменных CNUM передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___c_n_u_m.html" title="Ответ на запрос переменных CNUM.">sPACKET_ANS_CNUM</a>.  <a href="structs_p_a_c_k_e_t___g_e_t___c_n_u_m.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___a_n_s___c_n_u_m.html">sPACKET_ANS_CNUM</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос переменных CNUM.  <a href="structs_p_a_c_k_e_t___a_n_s___c_n_u_m.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___g_e_t___t_i_m_e_r.html">sPACKET_GET_TIMER</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос переменных TIMER. Ответ на команду запроса переменных TIMER передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___t_i_m_e_r.html" title="Ответ на запрос переменных TIMER.">sPACKET_ANS_TIMER</a>.  <a href="structs_p_a_c_k_e_t___g_e_t___t_i_m_e_r.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___a_n_s___t_i_m_e_r.html">sPACKET_ANS_TIMER</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос переменных TIMER.  <a href="structs_p_a_c_k_e_t___a_n_s___t_i_m_e_r.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___t_i_m_e_r.html">sPACKET_SET_TIMER</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка переменных TIMER. Ответ на команду установки переменных TIMER передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___t_i_m_e_r.html" title="Ответ на запрос переменных TIMER.">sPACKET_ANS_TIMER</a>.  <a href="structs_p_a_c_k_e_t___s_e_t___t_i_m_e_r.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___g_e_t___m_o_d_e.html">sPACKET_GET_MODE</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос текущего режима. Ответ на команду запроса текущего режима передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___m_o_d_e.html" title="Ответ на запрос текущего режима.">sPACKET_ANS_MODE</a>.  <a href="structs_p_a_c_k_e_t___g_e_t___m_o_d_e.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___a_n_s___m_o_d_e.html">sPACKET_ANS_MODE</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос текущего режима.  <a href="structs_p_a_c_k_e_t___a_n_s___m_o_d_e.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___m_o_d_e.html">sPACKET_SET_MODE</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка текущего режима. Ответ на команду установки текущего режима передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___m_o_d_e.html" title="Ответ на запрос текущего режима.">sPACKET_ANS_MODE</a>.  <a href="structs_p_a_c_k_e_t___s_e_t___m_o_d_e.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___g_e_t___e_e_c_o_n_s_t.html">sPACKET_GET_EECONST</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос значений eeconst. Ответ на команду запроса значений eeconst передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___e_e_c_o_n_s_t.html" title="Ответ на запрос значений eeconst.">sPACKET_ANS_EECONST</a>.  <a href="structs_p_a_c_k_e_t___g_e_t___e_e_c_o_n_s_t.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___a_n_s___e_e_c_o_n_s_t.html">sPACKET_ANS_EECONST</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос значений eeconst.  <a href="structs_p_a_c_k_e_t___a_n_s___e_e_c_o_n_s_t.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___e_e_c_o_n_s_t.html">sPACKET_SET_EECONST</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка значений eeconst. Ответ на команду установки значений eeconst передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___e_e_c_o_n_s_t.html" title="Ответ на запрос значений eeconst.">sPACKET_ANS_EECONST</a>.  <a href="structs_p_a_c_k_e_t___s_e_t___e_e_c_o_n_s_t.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___g_e_t___f_s_m_c.html">sPACKET_GET_FSMC</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос значений fsmc. Ответ на команду запроса значений fsmc передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___f_s_m_c.html" title="Ответ на запрос значений fsmc.">sPACKET_ANS_FSMC</a>.  <a href="structs_p_a_c_k_e_t___g_e_t___f_s_m_c.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___a_n_s___f_s_m_c.html">sPACKET_ANS_FSMC</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос значений fsmc.  <a href="structs_p_a_c_k_e_t___a_n_s___f_s_m_c.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___f_s_m_c.html">sPACKET_SET_FSMC</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка значений fsmc. Ответ на команду установки значений fsmc передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___f_s_m_c.html" title="Ответ на запрос значений fsmc.">sPACKET_ANS_FSMC</a>.  <a href="structs_p_a_c_k_e_t___s_e_t___f_s_m_c.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___g_e_t___i_m_a_g_e.html">sPACKET_GET_IMAGE</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос переменных IMAGE. Ответ на команду запроса переменных IMAGE передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___i_m_a_g_e.html" title="Ответ на запрос переменных IMAGE.">sPACKET_ANS_IMAGE</a>.  <a href="structs_p_a_c_k_e_t___g_e_t___i_m_a_g_e.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___a_n_s___i_m_a_g_e.html">sPACKET_ANS_IMAGE</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос переменных IMAGE.  <a href="structs_p_a_c_k_e_t___a_n_s___i_m_a_g_e.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___i_m_a_g_e.html">sPACKET_SET_IMAGE</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка переменных IMAGE. Ответ на команду установки переменных IMAGE передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___i_m_a_g_e.html" title="Ответ на запрос переменных IMAGE.">sPACKET_ANS_IMAGE</a>.  <a href="structs_p_a_c_k_e_t___s_e_t___i_m_a_g_e.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___p_r_o_g___c_m_d.html">sPACKET_PROG_CMD</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда обновления.  <a href="structs_p_a_c_k_e_t___p_r_o_g___c_m_d.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___p_r_o_g___a_n_s.html">sPACKET_PROG_ANS</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на команду обновления.  <a href="structs_p_a_c_k_e_t___p_r_o_g___a_n_s.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___p_r_o_g___d_a_t_a.html">sPACKET_PROG_DATA</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные для обновления.  <a href="structs_p_a_c_k_e_t___p_r_o_g___d_a_t_a.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae255577cd463921d0854251e8283182d"></a><!-- doxytag: member="proto.h::ETH_TABLO_CONTROL_PORT" ref="ae255577cd463921d0854251e8283182d" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETH_TABLO_CONTROL_PORT</b>&#160;&#160;&#160;(5001)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac95eeb4c73ac0f18ed40cc0b31bb1c70"></a><!-- doxytag: member="proto.h::ETH_TABLO_DEBUG_PORT" ref="ac95eeb4c73ac0f18ed40cc0b31bb1c70" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETH_TABLO_DEBUG_PORT</b>&#160;&#160;&#160;(5010)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6096264b6da1153020763fab64122027"></a><!-- doxytag: member="proto.h::ETH_TABLO_VERSION" ref="a6096264b6da1153020763fab64122027" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETH_TABLO_VERSION</b>&#160;&#160;&#160;((SW_TYPE &lt;&lt; 8) | SW_MODEL)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40dfdebec99d7f4b1ba8935c1a1a7e0a"></a><!-- doxytag: member="proto.h::ETH_TABLO_DATE" ref="a40dfdebec99d7f4b1ba8935c1a1a7e0a" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETH_TABLO_DATE</b>&#160;&#160;&#160;(SW_DATE_DW / (24 * 60 * 60))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae30ed98ab74e1769c393411965f6156c"></a><!-- doxytag: member="proto.h::ETH_TABLO_TYPE" ref="ae30ed98ab74e1769c393411965f6156c" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#ae30ed98ab74e1769c393411965f6156c">ETH_TABLO_TYPE</a>&#160;&#160;&#160;(SW_TYPE)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип табло (6) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a461c0392fe1f8a5da3560a48a07b1287"></a><!-- doxytag: member="proto.h::ETH_TABLO_TYPE_BR" ref="a461c0392fe1f8a5da3560a48a07b1287" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a461c0392fe1f8a5da3560a48a07b1287">ETH_TABLO_TYPE_BR</a>&#160;&#160;&#160;(0xFF)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Широковещательный тип табло (0xFF) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a823e554e4e9c1dd0c01b43b72c301d4b"></a><!-- doxytag: member="proto.h::ETH_PROG_DATA_SIZE" ref="a823e554e4e9c1dd0c01b43b72c301d4b" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a823e554e4e9c1dd0c01b43b72c301d4b">ETH_PROG_DATA_SIZE</a>&#160;&#160;&#160;(1024)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Размер порции данных программирования (1024) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c3ff6bd5d63db79f4175fe2aad295c9"></a><!-- doxytag: member="proto.h::NVSTR_PROTO_NUM" ref="a5c3ff6bd5d63db79f4175fe2aad295c9" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a5c3ff6bd5d63db79f4175fe2aad295c9">NVSTR_PROTO_NUM</a>&#160;&#160;&#160;(1)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Число элементов NVSTR в пакете (1) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adde378fed4da0a85f42268cddd4c6670"></a><!-- doxytag: member="proto.h::RSTR_PROTO_NUM" ref="adde378fed4da0a85f42268cddd4c6670" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#adde378fed4da0a85f42268cddd4c6670">RSTR_PROTO_NUM</a>&#160;&#160;&#160;(8)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Число элементов RSTR в пакете (8) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a974f53e90b47b58114a57eeae33eaaa4"></a><!-- doxytag: member="proto.h::CSTR_PROTO_NUM" ref="a974f53e90b47b58114a57eeae33eaaa4" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a974f53e90b47b58114a57eeae33eaaa4">CSTR_PROTO_NUM</a>&#160;&#160;&#160;(8)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Число элементов CSTR в пакете (8) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae35bde22093373f9847743acb70e4bb3"></a><!-- doxytag: member="proto.h::NVNUM_PROTO_NUM" ref="ae35bde22093373f9847743acb70e4bb3" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#ae35bde22093373f9847743acb70e4bb3">NVNUM_PROTO_NUM</a>&#160;&#160;&#160;(128)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Число элементов NVNUM в пакете (128) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad29da8db9edf4748147773435824a383"></a><!-- doxytag: member="proto.h::RNUM_PROTO_NUM" ref="ad29da8db9edf4748147773435824a383" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#ad29da8db9edf4748147773435824a383">RNUM_PROTO_NUM</a>&#160;&#160;&#160;(128)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Число элементов RNUM в пакете (128) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a035b3151b63ca7beb6627f5546c0999c"></a><!-- doxytag: member="proto.h::CNUM_PROTO_NUM" ref="a035b3151b63ca7beb6627f5546c0999c" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a035b3151b63ca7beb6627f5546c0999c">CNUM_PROTO_NUM</a>&#160;&#160;&#160;(128)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Число элементов CNUM в пакете (128) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94fbbc25e0c265c30a345e847b3b176c"></a><!-- doxytag: member="proto.h::TIMER_PROTO_NUM" ref="a94fbbc25e0c265c30a345e847b3b176c" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a94fbbc25e0c265c30a345e847b3b176c">TIMER_PROTO_NUM</a>&#160;&#160;&#160;(64)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Число элементов TIMER в пакете (64) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38a196d020f78f178a33927d741a03f2"></a><!-- doxytag: member="proto.h::STR_SIZE" ref="a38a196d020f78f178a33927d741a03f2" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>STR_SIZE</b>&#160;&#160;&#160;(1024)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6791d026d7781173396c13ddbeefb711"></a><!-- doxytag: member="proto.h::ETH_CMD_NONE" ref="a6791d026d7781173396c13ddbeefb711" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a6791d026d7781173396c13ddbeefb711">ETH_CMD_NONE</a>&#160;&#160;&#160;(0)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Нет команды [не используется]. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee360ae3e7a028f163b25ec2a1cccb91"></a><!-- doxytag: member="proto.h::ETH_CMD_SEARCH" ref="aee360ae3e7a028f163b25ec2a1cccb91" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#aee360ae3e7a028f163b25ec2a1cccb91">ETH_CMD_SEARCH</a>&#160;&#160;&#160;(1)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда поиска (1) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfe4dcee1a023315b7abf020390764b6"></a><!-- doxytag: member="proto.h::ETH_ANS_INFO" ref="acfe4dcee1a023315b7abf020390764b6" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#acfe4dcee1a023315b7abf020390764b6">ETH_ANS_INFO</a>&#160;&#160;&#160;(2)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на команду запроса информации о табло (2) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44f2513e693b10438cd745ffa56f1444"></a><!-- doxytag: member="proto.h::ETH_GET_INFO" ref="a44f2513e693b10438cd745ffa56f1444" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a44f2513e693b10438cd745ffa56f1444">ETH_GET_INFO</a>&#160;&#160;&#160;(3)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос информации о табло (3) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b11d6bc2eef564627ca0fcb1cdc1453"></a><!-- doxytag: member="proto.h::ETH_GET_NET" ref="a9b11d6bc2eef564627ca0fcb1cdc1453" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a9b11d6bc2eef564627ca0fcb1cdc1453">ETH_GET_NET</a>&#160;&#160;&#160;(4)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос сетевых настроек (4) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35d57b72b1f0f16c227cbe3ebfeb8932"></a><!-- doxytag: member="proto.h::ETH_ANS_NET" ref="a35d57b72b1f0f16c227cbe3ebfeb8932" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a35d57b72b1f0f16c227cbe3ebfeb8932">ETH_ANS_NET</a>&#160;&#160;&#160;(5)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос сетевых настроек (5) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea71414d9088eddf441c53e18b164aff"></a><!-- doxytag: member="proto.h::ETH_SET_NET" ref="aea71414d9088eddf441c53e18b164aff" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#aea71414d9088eddf441c53e18b164aff">ETH_SET_NET</a>&#160;&#160;&#160;(6)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка сетевых настроек (6) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8120c6252cdbd96e3e3c2a52e32186c5"></a><!-- doxytag: member="proto.h::ETH_GET_NV" ref="a8120c6252cdbd96e3e3c2a52e32186c5" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a8120c6252cdbd96e3e3c2a52e32186c5">ETH_GET_NV</a>&#160;&#160;&#160;(7)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос энергонезависимых данных (7) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41771a31a0ec459a57b81013dfc99352"></a><!-- doxytag: member="proto.h::ETH_ANS_NV" ref="a41771a31a0ec459a57b81013dfc99352" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a41771a31a0ec459a57b81013dfc99352">ETH_ANS_NV</a>&#160;&#160;&#160;(8)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос энергонезависимых данных (8) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e200e06b13bfeaa5d61a6a20a290b84"></a><!-- doxytag: member="proto.h::ETH_SET_NV" ref="a8e200e06b13bfeaa5d61a6a20a290b84" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a8e200e06b13bfeaa5d61a6a20a290b84">ETH_SET_NV</a>&#160;&#160;&#160;(9)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка энергонезависимых данных (9) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6c35332ec0ab8d1f10cde650209e8f4"></a><!-- doxytag: member="proto.h::ETH_GET_CONFIG" ref="ab6c35332ec0ab8d1f10cde650209e8f4" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#ab6c35332ec0ab8d1f10cde650209e8f4">ETH_GET_CONFIG</a>&#160;&#160;&#160;(10)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос конфигурации табло (10) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4abfc89bdcefa5e962eafa78ee18cb5d"></a><!-- doxytag: member="proto.h::ETH_ANS_CONFIG" ref="a4abfc89bdcefa5e962eafa78ee18cb5d" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a4abfc89bdcefa5e962eafa78ee18cb5d">ETH_ANS_CONFIG</a>&#160;&#160;&#160;(11)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос конфигурации табло (11) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fa9056a9e7a097c2fd5920d1ae1e50f"></a><!-- doxytag: member="proto.h::ETH_SET_CONFIG" ref="a9fa9056a9e7a097c2fd5920d1ae1e50f" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a9fa9056a9e7a097c2fd5920d1ae1e50f">ETH_SET_CONFIG</a>&#160;&#160;&#160;(12)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка конфигурации табло (12) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a112ff286314904ec570b6ae1d22162ec"></a><!-- doxytag: member="proto.h::ETH_SET_DATA" ref="a112ff286314904ec570b6ae1d22162ec" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a112ff286314904ec570b6ae1d22162ec">ETH_SET_DATA</a>&#160;&#160;&#160;(16)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка данных [не используется]. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2dbb4d37f299832646a4038b877cde6d"></a><!-- doxytag: member="proto.h::ETH_ANS_DATA" ref="a2dbb4d37f299832646a4038b877cde6d" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a2dbb4d37f299832646a4038b877cde6d">ETH_ANS_DATA</a>&#160;&#160;&#160;(17)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ установки данных [не используется]. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ace89381e1ff3af07f3646bda322ad5"></a><!-- doxytag: member="proto.h::ETH_UDP_DEBUG" ref="a7ace89381e1ff3af07f3646bda322ad5" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a7ace89381e1ff3af07f3646bda322ad5">ETH_UDP_DEBUG</a>&#160;&#160;&#160;(18)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка режима отладки (18) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8ed2e7f379315d74f9ff7ef145b51c5"></a><!-- doxytag: member="proto.h::ETH_GET_NVSTR" ref="ab8ed2e7f379315d74f9ff7ef145b51c5" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#ab8ed2e7f379315d74f9ff7ef145b51c5">ETH_GET_NVSTR</a>&#160;&#160;&#160;(20)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос переменных NVSTR (20) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f7e8cc68814e99a4132f0e99767c228"></a><!-- doxytag: member="proto.h::ETH_ANS_NVSTR" ref="a2f7e8cc68814e99a4132f0e99767c228" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a2f7e8cc68814e99a4132f0e99767c228">ETH_ANS_NVSTR</a>&#160;&#160;&#160;(21)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос переменных NVSTR (21) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f3ef10e71a1471efa57c6bac46085f6"></a><!-- doxytag: member="proto.h::ETH_SET_NVSTR" ref="a7f3ef10e71a1471efa57c6bac46085f6" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a7f3ef10e71a1471efa57c6bac46085f6">ETH_SET_NVSTR</a>&#160;&#160;&#160;(22)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка переменных NVSTR (22) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a919663ebf16405a2fe39a40f9f03c4a1"></a><!-- doxytag: member="proto.h::ETH_GET_RSTR" ref="a919663ebf16405a2fe39a40f9f03c4a1" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a919663ebf16405a2fe39a40f9f03c4a1">ETH_GET_RSTR</a>&#160;&#160;&#160;(23)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос переменных RSTR (23) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a793c56326e3e685b230455e29c5dbb3f"></a><!-- doxytag: member="proto.h::ETH_ANS_RSTR" ref="a793c56326e3e685b230455e29c5dbb3f" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a793c56326e3e685b230455e29c5dbb3f">ETH_ANS_RSTR</a>&#160;&#160;&#160;(24)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос переменных RSTR (24) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14d9cb70d7eeedfd038ef4acce8cc908"></a><!-- doxytag: member="proto.h::ETH_SET_RSTR" ref="a14d9cb70d7eeedfd038ef4acce8cc908" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a14d9cb70d7eeedfd038ef4acce8cc908">ETH_SET_RSTR</a>&#160;&#160;&#160;(25)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка переменных RSTR (25) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff7600b540d5820a178b327187cda25b"></a><!-- doxytag: member="proto.h::ETH_GET_CSTR" ref="aff7600b540d5820a178b327187cda25b" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#aff7600b540d5820a178b327187cda25b">ETH_GET_CSTR</a>&#160;&#160;&#160;(26)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос переменных CSTR (26) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d33d3d4a10b5c10ff9ff242af69681f"></a><!-- doxytag: member="proto.h::ETH_ANS_CSTR" ref="a6d33d3d4a10b5c10ff9ff242af69681f" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a6d33d3d4a10b5c10ff9ff242af69681f">ETH_ANS_CSTR</a>&#160;&#160;&#160;(27)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос переменных CSTR (27) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7155d7249a6fb4b5f3c2fa57438377eb"></a><!-- doxytag: member="proto.h::ETH_GET_NVNUM" ref="a7155d7249a6fb4b5f3c2fa57438377eb" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a7155d7249a6fb4b5f3c2fa57438377eb">ETH_GET_NVNUM</a>&#160;&#160;&#160;(28)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос переменных NVNUM (28) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a912113cc1f21fcc0d0fea7bf4002e20c"></a><!-- doxytag: member="proto.h::ETH_ANS_NVNUM" ref="a912113cc1f21fcc0d0fea7bf4002e20c" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a912113cc1f21fcc0d0fea7bf4002e20c">ETH_ANS_NVNUM</a>&#160;&#160;&#160;(29)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос переменных NVNUM (29) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66d9681932f567411eef0c359d13a9ff"></a><!-- doxytag: member="proto.h::ETH_SET_NVNUM" ref="a66d9681932f567411eef0c359d13a9ff" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a66d9681932f567411eef0c359d13a9ff">ETH_SET_NVNUM</a>&#160;&#160;&#160;(30)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка переменных NVNUM (30) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9557033e34e6996deca264858ed4de5b"></a><!-- doxytag: member="proto.h::ETH_GET_RNUM" ref="a9557033e34e6996deca264858ed4de5b" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a9557033e34e6996deca264858ed4de5b">ETH_GET_RNUM</a>&#160;&#160;&#160;(31)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос переменных RNUM (31) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81bfb7c416f5649d2d410de063391255"></a><!-- doxytag: member="proto.h::ETH_ANS_RNUM" ref="a81bfb7c416f5649d2d410de063391255" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a81bfb7c416f5649d2d410de063391255">ETH_ANS_RNUM</a>&#160;&#160;&#160;(32)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос переменных RNUM (32) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae23b31a95cef0fdc861381d48e54f919"></a><!-- doxytag: member="proto.h::ETH_SET_RNUM" ref="ae23b31a95cef0fdc861381d48e54f919" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#ae23b31a95cef0fdc861381d48e54f919">ETH_SET_RNUM</a>&#160;&#160;&#160;(33)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка переменных RNUM (33) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="addf12dc220822fa7f20b17361b639ef1"></a><!-- doxytag: member="proto.h::ETH_GET_CNUM" ref="addf12dc220822fa7f20b17361b639ef1" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#addf12dc220822fa7f20b17361b639ef1">ETH_GET_CNUM</a>&#160;&#160;&#160;(34)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос переменных CNUM (34) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87dacff4fabb0345620d5f815bab4c9d"></a><!-- doxytag: member="proto.h::ETH_ANS_CNUM" ref="a87dacff4fabb0345620d5f815bab4c9d" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a87dacff4fabb0345620d5f815bab4c9d">ETH_ANS_CNUM</a>&#160;&#160;&#160;(35)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос переменных CNUM (35) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a615e688607fe1e72f0a442b3f7be8db1"></a><!-- doxytag: member="proto.h::ETH_GET_TIMER" ref="a615e688607fe1e72f0a442b3f7be8db1" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a615e688607fe1e72f0a442b3f7be8db1">ETH_GET_TIMER</a>&#160;&#160;&#160;(36)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос переменных TIMER (36) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf9318ab679f32317516b29a7d1e6815"></a><!-- doxytag: member="proto.h::ETH_ANS_TIMER" ref="abf9318ab679f32317516b29a7d1e6815" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#abf9318ab679f32317516b29a7d1e6815">ETH_ANS_TIMER</a>&#160;&#160;&#160;(37)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос переменных TIMER (37) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67526c5c4884d1e1e0693f0ae491ca0e"></a><!-- doxytag: member="proto.h::ETH_SET_TIMER" ref="a67526c5c4884d1e1e0693f0ae491ca0e" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a67526c5c4884d1e1e0693f0ae491ca0e">ETH_SET_TIMER</a>&#160;&#160;&#160;(38)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка переменных TIMER (38) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa30a84ae6a43fb2f25a2fc2064dedb7c"></a><!-- doxytag: member="proto.h::ETH_GET_EECONST" ref="aa30a84ae6a43fb2f25a2fc2064dedb7c" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#aa30a84ae6a43fb2f25a2fc2064dedb7c">ETH_GET_EECONST</a>&#160;&#160;&#160;(39)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос значений eeconst (39) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2abfeb069194300a950aaf98a703ffb9"></a><!-- doxytag: member="proto.h::ETH_ANS_EECONST" ref="a2abfeb069194300a950aaf98a703ffb9" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a2abfeb069194300a950aaf98a703ffb9">ETH_ANS_EECONST</a>&#160;&#160;&#160;(40)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос значений eeconst (40) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80f6e75da77354e0080486c49f077e24"></a><!-- doxytag: member="proto.h::ETH_SET_EECONST" ref="a80f6e75da77354e0080486c49f077e24" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a80f6e75da77354e0080486c49f077e24">ETH_SET_EECONST</a>&#160;&#160;&#160;(41)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка значений eeconst (41) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac076d30ede2fa6dc674e8ae445af1023"></a><!-- doxytag: member="proto.h::ETH_GET_FSMC" ref="ac076d30ede2fa6dc674e8ae445af1023" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#ac076d30ede2fa6dc674e8ae445af1023">ETH_GET_FSMC</a>&#160;&#160;&#160;(42)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос значений fsmc (42) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac63e767fb32f7efb874290e587c6bd23"></a><!-- doxytag: member="proto.h::ETH_ANS_FSMC" ref="ac63e767fb32f7efb874290e587c6bd23" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#ac63e767fb32f7efb874290e587c6bd23">ETH_ANS_FSMC</a>&#160;&#160;&#160;(43)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос значений fsmc (43) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a289fe1b42588f1f3c7b1cc99d3340cbe"></a><!-- doxytag: member="proto.h::ETH_SET_FSMC" ref="a289fe1b42588f1f3c7b1cc99d3340cbe" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a289fe1b42588f1f3c7b1cc99d3340cbe">ETH_SET_FSMC</a>&#160;&#160;&#160;(44)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка значений fsmc (44) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aacc9fcc5eb776627fef6505d4c87622c"></a><!-- doxytag: member="proto.h::ETH_GET_IMAGE" ref="aacc9fcc5eb776627fef6505d4c87622c" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#aacc9fcc5eb776627fef6505d4c87622c">ETH_GET_IMAGE</a>&#160;&#160;&#160;(45)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос значений image (45) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4495af4a1fce8cab4d28d28c2c451104"></a><!-- doxytag: member="proto.h::ETH_ANS_IMAGE" ref="a4495af4a1fce8cab4d28d28c2c451104" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a4495af4a1fce8cab4d28d28c2c451104">ETH_ANS_IMAGE</a>&#160;&#160;&#160;(46)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос значений image (46) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a0d49e92fbac55fac027bc0959041a0"></a><!-- doxytag: member="proto.h::ETH_SET_IMAGE" ref="a0a0d49e92fbac55fac027bc0959041a0" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a0a0d49e92fbac55fac027bc0959041a0">ETH_SET_IMAGE</a>&#160;&#160;&#160;(47)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка значений image (47) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace0511163a2a597c04756fc5b9cc4f32"></a><!-- doxytag: member="proto.h::ETH_GET_MODE" ref="ace0511163a2a597c04756fc5b9cc4f32" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#ace0511163a2a597c04756fc5b9cc4f32">ETH_GET_MODE</a>&#160;&#160;&#160;(50)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрос текущего режима (50) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3820781894114e097f8dad2a47d6aee"></a><!-- doxytag: member="proto.h::ETH_ANS_MODE" ref="ae3820781894114e097f8dad2a47d6aee" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#ae3820781894114e097f8dad2a47d6aee">ETH_ANS_MODE</a>&#160;&#160;&#160;(51)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на запрос текущего режима (51) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36f767cd4687a3111b5503877bfdc871"></a><!-- doxytag: member="proto.h::ETH_SET_MODE" ref="a36f767cd4687a3111b5503877bfdc871" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a36f767cd4687a3111b5503877bfdc871">ETH_SET_MODE</a>&#160;&#160;&#160;(52)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка текущего режима (52) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdf129263f91e351a4b4ec32ebc285e1"></a><!-- doxytag: member="proto.h::ETH_PROG_CMD" ref="afdf129263f91e351a4b4ec32ebc285e1" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#afdf129263f91e351a4b4ec32ebc285e1">ETH_PROG_CMD</a>&#160;&#160;&#160;(100)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда обновления (100) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8cae64448bcd9c86254074df4ef96c81"></a><!-- doxytag: member="proto.h::ETH_PROG_ANS" ref="a8cae64448bcd9c86254074df4ef96c81" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a8cae64448bcd9c86254074df4ef96c81">ETH_PROG_ANS</a>&#160;&#160;&#160;(101)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ на команду обновления (101) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad79fc772bbc60114245f7bcf938d651a"></a><!-- doxytag: member="proto.h::ETH_PROG_DATA" ref="ad79fc772bbc60114245f7bcf938d651a" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#ad79fc772bbc60114245f7bcf938d651a">ETH_PROG_DATA</a>&#160;&#160;&#160;(102)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Данные для обновления (102) <br/></td></tr>
+<tr><td colspan="2"><h2><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1d1e54062a725a929e62f6eb365ea79"></a><!-- doxytag: member="proto.h::sP_TIMER" ref="ac1d1e54062a725a929e62f6eb365ea79" args="" -->
+typedef struct <a class="el" href="structs_p___t_i_m_e_r.html">sP_TIMER</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sP_TIMER</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1231336896c6a63a42be1e365d643de0"></a><!-- doxytag: member="proto.h::sCOMMAND" ref="a1231336896c6a63a42be1e365d643de0" args="" -->
+typedef struct <a class="el" href="structs_c_o_m_m_a_n_d.html">sCOMMAND</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sCOMMAND</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae621af152387b1c895cc4e649d5b824b"></a><!-- doxytag: member="proto.h::sPACKET_CMD_SEARCH" ref="ae621af152387b1c895cc4e649d5b824b" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___c_m_d___s_e_a_r_c_h.html">sPACKET_CMD_SEARCH</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_CMD_SEARCH</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1211ab9eb94f9219ce527756157411cf"></a><!-- doxytag: member="proto.h::sPACKET_ANS_INFO" ref="a1211ab9eb94f9219ce527756157411cf" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___a_n_s___i_n_f_o.html">sPACKET_ANS_INFO</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_ANS_INFO</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac50aeb3036c5f5e376822eac63fd8650"></a><!-- doxytag: member="proto.h::sPACKET_GET_INFO" ref="ac50aeb3036c5f5e376822eac63fd8650" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___g_e_t___i_n_f_o.html">sPACKET_GET_INFO</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_GET_INFO</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3aaca2698657024c9a47ecf9d3f799f9"></a><!-- doxytag: member="proto.h::sPACKET_GET_NET" ref="a3aaca2698657024c9a47ecf9d3f799f9" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___g_e_t___n_e_t.html">sPACKET_GET_NET</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_GET_NET</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea073dc0e618003a8ed215d6059483a7"></a><!-- doxytag: member="proto.h::sPACKET_ANS_NET" ref="aea073dc0e618003a8ed215d6059483a7" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___a_n_s___n_e_t.html">sPACKET_ANS_NET</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_ANS_NET</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4201620bd64dd12945862d5bb901ed44"></a><!-- doxytag: member="proto.h::sPACKET_SET_NET" ref="a4201620bd64dd12945862d5bb901ed44" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___s_e_t___n_e_t.html">sPACKET_SET_NET</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_SET_NET</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa65f57494709e7e7e20259e103e616e5"></a><!-- doxytag: member="proto.h::sPACKET_GET_NV" ref="aa65f57494709e7e7e20259e103e616e5" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___g_e_t___n_v.html">sPACKET_GET_NV</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_GET_NV</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab50b08bf7ec5e53e58cf34c1dae31dee"></a><!-- doxytag: member="proto.h::sPACKET_ANS_NV" ref="ab50b08bf7ec5e53e58cf34c1dae31dee" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___a_n_s___n_v.html">sPACKET_ANS_NV</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_ANS_NV</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40a06f9741e7a2207d10e70e684ac8fe"></a><!-- doxytag: member="proto.h::sPACKET_SET_NV" ref="a40a06f9741e7a2207d10e70e684ac8fe" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___s_e_t___n_v.html">sPACKET_SET_NV</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_SET_NV</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39065409266ce38bffa40a9f5eae5324"></a><!-- doxytag: member="proto.h::sPACKET_GET_CONFIG" ref="a39065409266ce38bffa40a9f5eae5324" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___g_e_t___c_o_n_f_i_g.html">sPACKET_GET_CONFIG</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_GET_CONFIG</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59a05b2565143522dad8fcd11b65a8a2"></a><!-- doxytag: member="proto.h::sPACKET_ANS_CONFIG" ref="a59a05b2565143522dad8fcd11b65a8a2" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___a_n_s___c_o_n_f_i_g.html">sPACKET_ANS_CONFIG</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_ANS_CONFIG</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add6ae6e0f2010828365a1af2a75be8dc"></a><!-- doxytag: member="proto.h::sPACKET_SET_CONFIG" ref="add6ae6e0f2010828365a1af2a75be8dc" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___s_e_t___c_o_n_f_i_g.html">sPACKET_SET_CONFIG</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_SET_CONFIG</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab73cc90916eb54a9237c8890d1c3e961"></a><!-- doxytag: member="proto.h::sPACKET_GET_DATETIME" ref="ab73cc90916eb54a9237c8890d1c3e961" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___g_e_t___d_a_t_e_t_i_m_e.html">sPACKET_GET_DATETIME</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_GET_DATETIME</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f8d3b67a7964deb3dec59940ed69577"></a><!-- doxytag: member="proto.h::sPACKET_ANS_DATETIME" ref="a3f8d3b67a7964deb3dec59940ed69577" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___a_n_s___d_a_t_e_t_i_m_e.html">sPACKET_ANS_DATETIME</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_ANS_DATETIME</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed7456ca1744312f6571a1d1e0d7d329"></a><!-- doxytag: member="proto.h::sPACKET_SET_DATETIME" ref="aed7456ca1744312f6571a1d1e0d7d329" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___s_e_t___d_a_t_e_t_i_m_e.html">sPACKET_SET_DATETIME</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_SET_DATETIME</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa83c21e62235259cf7af56729b57f27f"></a><!-- doxytag: member="proto.h::sPACKET_SET_DATA" ref="aa83c21e62235259cf7af56729b57f27f" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___s_e_t___d_a_t_a.html">sPACKET_SET_DATA</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_SET_DATA</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4d2631b101bd6235147cd12d51200b2"></a><!-- doxytag: member="proto.h::sPACKET_ANS_DATA" ref="ac4d2631b101bd6235147cd12d51200b2" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___a_n_s___d_a_t_a.html">sPACKET_ANS_DATA</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_ANS_DATA</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7efd6a5c02baf11ec7a3d0fe92ead22"></a><!-- doxytag: member="proto.h::sPACKET_UDP_DEBUG" ref="ac7efd6a5c02baf11ec7a3d0fe92ead22" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___u_d_p___d_e_b_u_g.html">sPACKET_UDP_DEBUG</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_UDP_DEBUG</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03deb70f2ce7f9595574be0aba04ad1f"></a><!-- doxytag: member="proto.h::sPACKET_GET_NVSTR" ref="a03deb70f2ce7f9595574be0aba04ad1f" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___g_e_t___n_v_s_t_r.html">sPACKET_GET_NVSTR</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_GET_NVSTR</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf76bae9d4e8f7c796629189921297ac"></a><!-- doxytag: member="proto.h::sPACKET_ANS_NVSTR" ref="acf76bae9d4e8f7c796629189921297ac" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___a_n_s___n_v_s_t_r.html">sPACKET_ANS_NVSTR</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_ANS_NVSTR</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8090229778c86b14cbe46de9ffea1199"></a><!-- doxytag: member="proto.h::sPACKET_SET_NVSTR" ref="a8090229778c86b14cbe46de9ffea1199" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___s_e_t___n_v_s_t_r.html">sPACKET_SET_NVSTR</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_SET_NVSTR</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1debe1b447b99fed6f625bc2a04db370"></a><!-- doxytag: member="proto.h::sPACKET_GET_RSTR" ref="a1debe1b447b99fed6f625bc2a04db370" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___g_e_t___r_s_t_r.html">sPACKET_GET_RSTR</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_GET_RSTR</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91e9a3a47c5280fc29a3a1d3cee3213a"></a><!-- doxytag: member="proto.h::sPACKET_ANS_RSTR" ref="a91e9a3a47c5280fc29a3a1d3cee3213a" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___a_n_s___r_s_t_r.html">sPACKET_ANS_RSTR</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_ANS_RSTR</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0fc9431dcdfdde8c05cf9e5b514b7507"></a><!-- doxytag: member="proto.h::sPACKET_SET_RSTR" ref="a0fc9431dcdfdde8c05cf9e5b514b7507" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___s_e_t___r_s_t_r.html">sPACKET_SET_RSTR</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_SET_RSTR</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ba458d11cb5bb64f028cfef98e05f27"></a><!-- doxytag: member="proto.h::sPACKET_GET_CSTR" ref="a4ba458d11cb5bb64f028cfef98e05f27" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___g_e_t___c_s_t_r.html">sPACKET_GET_CSTR</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_GET_CSTR</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6795fc1a015aa9cac15a25cbf081f055"></a><!-- doxytag: member="proto.h::sPACKET_ANS_CSTR" ref="a6795fc1a015aa9cac15a25cbf081f055" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___a_n_s___c_s_t_r.html">sPACKET_ANS_CSTR</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_ANS_CSTR</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3a110c65cadd4f7db1e5413f3d9370d"></a><!-- doxytag: member="proto.h::sPACKET_GET_NVNUM" ref="ad3a110c65cadd4f7db1e5413f3d9370d" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___g_e_t___n_v_n_u_m.html">sPACKET_GET_NVNUM</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_GET_NVNUM</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee53c1b9e5fb19aba2021fd4874bba88"></a><!-- doxytag: member="proto.h::sPACKET_ANS_NVNUM" ref="aee53c1b9e5fb19aba2021fd4874bba88" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___a_n_s___n_v_n_u_m.html">sPACKET_ANS_NVNUM</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_ANS_NVNUM</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd0630e66ab3af3d3ed752c60455e0de"></a><!-- doxytag: member="proto.h::sPACKET_SET_NVNUM" ref="acd0630e66ab3af3d3ed752c60455e0de" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___s_e_t___n_v_n_u_m.html">sPACKET_SET_NVNUM</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_SET_NVNUM</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abec18950f708e7ccb87404b2d9e5d39c"></a><!-- doxytag: member="proto.h::sPACKET_GET_RNUM" ref="abec18950f708e7ccb87404b2d9e5d39c" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___g_e_t___r_n_u_m.html">sPACKET_GET_RNUM</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_GET_RNUM</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93154bef992977ea95f1e721ac024c89"></a><!-- doxytag: member="proto.h::sPACKET_ANS_RNUM" ref="a93154bef992977ea95f1e721ac024c89" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___a_n_s___r_n_u_m.html">sPACKET_ANS_RNUM</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_ANS_RNUM</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa849810deea4a127d60e5617e08e234c"></a><!-- doxytag: member="proto.h::sPACKET_SET_RNUM" ref="aa849810deea4a127d60e5617e08e234c" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___s_e_t___r_n_u_m.html">sPACKET_SET_RNUM</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_SET_RNUM</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae339b92d7c44a664f4a01d5174e75915"></a><!-- doxytag: member="proto.h::sPACKET_GET_CNUM" ref="ae339b92d7c44a664f4a01d5174e75915" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___g_e_t___c_n_u_m.html">sPACKET_GET_CNUM</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_GET_CNUM</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89c95c04ad91aad0c05f576cef91aed3"></a><!-- doxytag: member="proto.h::sPACKET_ANS_CNUM" ref="a89c95c04ad91aad0c05f576cef91aed3" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___a_n_s___c_n_u_m.html">sPACKET_ANS_CNUM</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_ANS_CNUM</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5706e82288ded618fb0aa0f9843645c5"></a><!-- doxytag: member="proto.h::sPACKET_GET_TIMER" ref="a5706e82288ded618fb0aa0f9843645c5" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___g_e_t___t_i_m_e_r.html">sPACKET_GET_TIMER</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_GET_TIMER</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a5e171a7c0db29e7644a04ac97abd22"></a><!-- doxytag: member="proto.h::sPACKET_ANS_TIMER" ref="a0a5e171a7c0db29e7644a04ac97abd22" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___a_n_s___t_i_m_e_r.html">sPACKET_ANS_TIMER</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_ANS_TIMER</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96c252d5bb2b3c02720d1102c1935873"></a><!-- doxytag: member="proto.h::sPACKET_SET_TIMER" ref="a96c252d5bb2b3c02720d1102c1935873" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___s_e_t___t_i_m_e_r.html">sPACKET_SET_TIMER</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_SET_TIMER</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca8ae6487cdee3f6ebd677d17f0c9edc"></a><!-- doxytag: member="proto.h::sPACKET_GET_MODE" ref="aca8ae6487cdee3f6ebd677d17f0c9edc" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___g_e_t___m_o_d_e.html">sPACKET_GET_MODE</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_GET_MODE</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a062de2606e45b3729ca9af743fb9f62b"></a><!-- doxytag: member="proto.h::sPACKET_ANS_MODE" ref="a062de2606e45b3729ca9af743fb9f62b" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___a_n_s___m_o_d_e.html">sPACKET_ANS_MODE</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_ANS_MODE</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a802eeb8ed743d29d0ab4e166537a5691"></a><!-- doxytag: member="proto.h::sPACKET_SET_MODE" ref="a802eeb8ed743d29d0ab4e166537a5691" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___s_e_t___m_o_d_e.html">sPACKET_SET_MODE</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_SET_MODE</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0e4ad9d20e87eeb5de1a4ee89b361c6"></a><!-- doxytag: member="proto.h::sPACKET_GET_EECONST" ref="ac0e4ad9d20e87eeb5de1a4ee89b361c6" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___g_e_t___e_e_c_o_n_s_t.html">sPACKET_GET_EECONST</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_GET_EECONST</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c49a818befff076e8b8d09fecb0904b"></a><!-- doxytag: member="proto.h::sPACKET_ANS_EECONST" ref="a8c49a818befff076e8b8d09fecb0904b" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___a_n_s___e_e_c_o_n_s_t.html">sPACKET_ANS_EECONST</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_ANS_EECONST</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af48dc185b7ff70867124bce41b33e820"></a><!-- doxytag: member="proto.h::sPACKET_SET_EECONST" ref="af48dc185b7ff70867124bce41b33e820" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___s_e_t___e_e_c_o_n_s_t.html">sPACKET_SET_EECONST</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_SET_EECONST</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa45d518d651304ff4eca0982b0cc6c18"></a><!-- doxytag: member="proto.h::sPACKET_GET_FSMC" ref="aa45d518d651304ff4eca0982b0cc6c18" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___g_e_t___f_s_m_c.html">sPACKET_GET_FSMC</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_GET_FSMC</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a28614b4bd09d1e0e73b3ae5b2f1cb8"></a><!-- doxytag: member="proto.h::sPACKET_ANS_FSMC" ref="a7a28614b4bd09d1e0e73b3ae5b2f1cb8" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___a_n_s___f_s_m_c.html">sPACKET_ANS_FSMC</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_ANS_FSMC</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65a5c4d6c6e70814a78e4742b25f9629"></a><!-- doxytag: member="proto.h::sPACKET_SET_FSMC" ref="a65a5c4d6c6e70814a78e4742b25f9629" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___s_e_t___f_s_m_c.html">sPACKET_SET_FSMC</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_SET_FSMC</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a233804a703a1e595083638de40169cb8"></a><!-- doxytag: member="proto.h::sPACKET_GET_IMAGE" ref="a233804a703a1e595083638de40169cb8" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___g_e_t___i_m_a_g_e.html">sPACKET_GET_IMAGE</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_GET_IMAGE</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e0dab0bc8c8afdd516d43e31929af7f"></a><!-- doxytag: member="proto.h::sPACKET_ANS_IMAGE" ref="a2e0dab0bc8c8afdd516d43e31929af7f" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___a_n_s___i_m_a_g_e.html">sPACKET_ANS_IMAGE</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_ANS_IMAGE</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55159627d728a1cda593fc803de5132d"></a><!-- doxytag: member="proto.h::sPACKET_SET_IMAGE" ref="a55159627d728a1cda593fc803de5132d" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___s_e_t___i_m_a_g_e.html">sPACKET_SET_IMAGE</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_SET_IMAGE</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a673fcc0032f88b1b6f8218f912f4d28b"></a><!-- doxytag: member="proto.h::sPACKET_PROG_CMD" ref="a673fcc0032f88b1b6f8218f912f4d28b" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___p_r_o_g___c_m_d.html">sPACKET_PROG_CMD</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_PROG_CMD</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35ee4c3bfd2495aadb07287cf8674b77"></a><!-- doxytag: member="proto.h::sPACKET_PROG_ANS" ref="a35ee4c3bfd2495aadb07287cf8674b77" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___p_r_o_g___a_n_s.html">sPACKET_PROG_ANS</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_PROG_ANS</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c58afd7be52a4f402a94862ce3085d0"></a><!-- doxytag: member="proto.h::sPACKET_PROG_DATA" ref="a0c58afd7be52a4f402a94862ce3085d0" args="" -->
+typedef struct <a class="el" href="structs_p_a_c_k_e_t___p_r_o_g___d_a_t_a.html">sPACKET_PROG_DATA</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sPACKET_PROG_DATA</b></td></tr>
+<tr><td colspan="2"><h2><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a917734923f866a92997fcdaaece8f224">ePROG_CMD</a> { <a class="el" href="proto_8h.html#a917734923f866a92997fcdaaece8f224a3ca3ad462c061026008b32fbdf5c6fa3">PROG_CMD_NONE</a> =  0, 
+<a class="el" href="proto_8h.html#a917734923f866a92997fcdaaece8f224a991938374ca8956bf3ad0af038891dde">PROG_CMD_ENTER</a>, 
+<a class="el" href="proto_8h.html#a917734923f866a92997fcdaaece8f224a25daa9263db16c12e8158993b51f87fa">PROG_CMD_ABORT</a>, 
+<a class="el" href="proto_8h.html#a917734923f866a92997fcdaaece8f224a8bb4b63bc04c94cc0ce9dd3972534403">PROG_CMD_STATE</a>
+ }</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Команды для обновления </p>
+ <a href="proto_8h.html#a917734923f866a92997fcdaaece8f224">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a003a765b36dbecedd8ff21d23dc8850b">ePROG_STATE</a> { <br/>
+&#160;&#160;<a class="el" href="proto_8h.html#a003a765b36dbecedd8ff21d23dc8850babc82d7160692c69b0822e46c8138ad8b">PROG_STATE_IDLE</a> =  0, 
+<a class="el" href="proto_8h.html#a003a765b36dbecedd8ff21d23dc8850ba15bd74fcae8d0fa009319d4d09478317">PROG_STATE_ENTER</a>, 
+<a class="el" href="proto_8h.html#a003a765b36dbecedd8ff21d23dc8850baa7164f81a87f44551e4b9a1b49a9357e">PROG_STATE_READY</a>, 
+<a class="el" href="proto_8h.html#a003a765b36dbecedd8ff21d23dc8850ba6071f45565c3bbc0c39fcfa7ab90eea8">PROG_STATE_WRITE</a>, 
+<br/>
+&#160;&#160;<a class="el" href="proto_8h.html#a003a765b36dbecedd8ff21d23dc8850bad89522cc47ff3732e13418365a8785cb">PROG_STATE_DONE</a>, 
+<a class="el" href="proto_8h.html#a003a765b36dbecedd8ff21d23dc8850ba79da70b8d7a5733b82c46851f4267733">PROG_STATE_RESULT</a>
+<br/>
+ }</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Состояние обновления </p>
+ <a href="proto_8h.html#a003a765b36dbecedd8ff21d23dc8850b">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a49d2a05788cb5940139bc40ceb80cd48">ePROG_TARGET</a> { <a class="el" href="proto_8h.html#a49d2a05788cb5940139bc40ceb80cd48a21e636cf57aafa7bf87b4c5790969704">PROG_TARGET_IMAGE</a> =  0, 
+<a class="el" href="proto_8h.html#a49d2a05788cb5940139bc40ceb80cd48a47663433a7b918e5e98a37a4ef35d213">PROG_TARGET_FONT</a>, 
+<a class="el" href="proto_8h.html#a49d2a05788cb5940139bc40ceb80cd48ac1138b569e1a4e8afde600320ea4e349">PROG_TARGET_CONFIG</a>
+ }</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Объект обновления </p>
+ <a href="proto_8h.html#a49d2a05788cb5940139bc40ceb80cd48">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#ae03270d052115afe4da7c107ea8bbd8d">ePROG_RESULT</a> { <a class="el" href="proto_8h.html#ae03270d052115afe4da7c107ea8bbd8da708862cce9c6521946e4fc94f45bd6cc">PROG_RESULT_OK</a> =  0, 
+<a class="el" href="proto_8h.html#ae03270d052115afe4da7c107ea8bbd8dad4f4cf69439ab7037c83cae9bb2991da">PROG_RESULT_FAIL_CRC32</a>
+ }</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Результат обновления </p>
+ <a href="proto_8h.html#ae03270d052115afe4da7c107ea8bbd8d">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a61566b6756dc861c5ac3193f363d593d">ePROG_ANS</a> { <a class="el" href="proto_8h.html#a61566b6756dc861c5ac3193f363d593da5ac2c273f6e1ce2adc110addb847d9e1">PROG_ANS_FAIL</a> =  0, 
+<a class="el" href="proto_8h.html#a61566b6756dc861c5ac3193f363d593dac866266c2e12e193ecccd8b34d9f2d7d">PROG_ANS_OK</a>
+ }</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Ответ на команду обновления </p>
+ <a href="proto_8h.html#a61566b6756dc861c5ac3193f363d593d">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proto_8h.html#a8c5fb1f9a271448715b6bdea52afb993">eP_TIMER_FIELD</a> { <br/>
+&#160;&#160;<a class="el" href="proto_8h.html#a8c5fb1f9a271448715b6bdea52afb993a1de4bef4f0a8a8b85975d20fed75d8c8">P_TIMER_FIELD_STATE</a> =  0, 
+<a class="el" href="proto_8h.html#a8c5fb1f9a271448715b6bdea52afb993a29b8ed192817546b520c021734369ad5">P_TIMER_FIELD_CURRENT</a>, 
+<a class="el" href="proto_8h.html#a8c5fb1f9a271448715b6bdea52afb993a66d0baa9e4da85921c4ce2b8e9f655d4">P_TIMER_FIELD_FROM</a>, 
+<a class="el" href="proto_8h.html#a8c5fb1f9a271448715b6bdea52afb993ad69b1700ff93b5db48d89c24fff549ae">P_TIMER_FIELD_TO</a>, 
+<br/>
+&#160;&#160;<a class="el" href="proto_8h.html#a8c5fb1f9a271448715b6bdea52afb993a3510ac70f352fcf40cd964e6cd94972b">P_TIMER_FIELD_FLAGS</a>
+<br/>
+ }</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Битовая маска активных полей: </p>
+ <a href="proto_8h.html#a8c5fb1f9a271448715b6bdea52afb993">Подробнее...</a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Подробное описание</h2>
+<p>Заголовочный файл для протокола обмена по Ethernet. </p>
+<dl class="author"><dt><b>Автор:</b></dt><dd>Шанин А.М. </dd>
+<dd>
+email: <a href="mailto:adnega@mail.ru">adnega@mail.ru</a> </dd>
+<dd>
+(C) Ярославль, 2015 </dd></dl>
+<dl class="version"><dt><b>Версия:</b></dt><dd>v0.1 </dd></dl>
+<dl class="date"><dt><b>Дата:</b></dt><dd>06.07.2015 </dd></dl>
+<hr/><h2>Перечисления</h2>
+<a class="anchor" id="a8c5fb1f9a271448715b6bdea52afb993"></a><!-- doxytag: member="proto.h::eP_TIMER_FIELD" ref="a8c5fb1f9a271448715b6bdea52afb993" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="proto_8h.html#a8c5fb1f9a271448715b6bdea52afb993">eP_TIMER_FIELD</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Битовая маска активных полей: </p>
+<ul>
+<li>0 - игнорировать поле</li>
+<li>1 - поле актуально <dl class="see"><dt><b>См. также:</b></dt><dd><a class="el" href="structs_p___t_i_m_e_r.html" title="Структура данных для TIMER.">sP_TIMER</a> </dd></dl>
+</li>
+</ul>
+<dl><dt><b>Элементы перечислений: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a8c5fb1f9a271448715b6bdea52afb993a1de4bef4f0a8a8b85975d20fed75d8c8"></a><!-- doxytag: member="P_TIMER_FIELD_STATE" ref="a8c5fb1f9a271448715b6bdea52afb993a1de4bef4f0a8a8b85975d20fed75d8c8" args="" -->P_TIMER_FIELD_STATE</em>&nbsp;</td><td>
+<p>Поле 'state' активно (0) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a8c5fb1f9a271448715b6bdea52afb993a29b8ed192817546b520c021734369ad5"></a><!-- doxytag: member="P_TIMER_FIELD_CURRENT" ref="a8c5fb1f9a271448715b6bdea52afb993a29b8ed192817546b520c021734369ad5" args="" -->P_TIMER_FIELD_CURRENT</em>&nbsp;</td><td>
+<p>Поле 'current' активно (1) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a8c5fb1f9a271448715b6bdea52afb993a66d0baa9e4da85921c4ce2b8e9f655d4"></a><!-- doxytag: member="P_TIMER_FIELD_FROM" ref="a8c5fb1f9a271448715b6bdea52afb993a66d0baa9e4da85921c4ce2b8e9f655d4" args="" -->P_TIMER_FIELD_FROM</em>&nbsp;</td><td>
+<p>Поле 'from' активно (2) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a8c5fb1f9a271448715b6bdea52afb993ad69b1700ff93b5db48d89c24fff549ae"></a><!-- doxytag: member="P_TIMER_FIELD_TO" ref="a8c5fb1f9a271448715b6bdea52afb993ad69b1700ff93b5db48d89c24fff549ae" args="" -->P_TIMER_FIELD_TO</em>&nbsp;</td><td>
+<p>Поле 'to' активно (3) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a8c5fb1f9a271448715b6bdea52afb993a3510ac70f352fcf40cd964e6cd94972b"></a><!-- doxytag: member="P_TIMER_FIELD_FLAGS" ref="a8c5fb1f9a271448715b6bdea52afb993a3510ac70f352fcf40cd964e6cd94972b" args="" -->P_TIMER_FIELD_FLAGS</em>&nbsp;</td><td>
+<p>Поле 'flags' активно (4) </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a61566b6756dc861c5ac3193f363d593d"></a><!-- doxytag: member="proto.h::ePROG_ANS" ref="a61566b6756dc861c5ac3193f363d593d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="proto_8h.html#a61566b6756dc861c5ac3193f363d593d">ePROG_ANS</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Ответ на команду обновления </p>
+<dl class="see"><dt><b>См. также:</b></dt><dd><a class="el" href="structs_p_a_c_k_e_t___p_r_o_g___a_n_s.html" title="Ответ на команду обновления.">sPACKET_PROG_ANS</a>, <a class="el" href="structs_p_a_c_k_e_t___p_r_o_g___d_a_t_a.html" title="Данные для обновления.">sPACKET_PROG_DATA</a> </dd></dl>
+<dl><dt><b>Элементы перечислений: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a61566b6756dc861c5ac3193f363d593da5ac2c273f6e1ce2adc110addb847d9e1"></a><!-- doxytag: member="PROG_ANS_FAIL" ref="a61566b6756dc861c5ac3193f363d593da5ac2c273f6e1ce2adc110addb847d9e1" args="" -->PROG_ANS_FAIL</em>&nbsp;</td><td>
+<p>Ошибка (0) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a61566b6756dc861c5ac3193f363d593dac866266c2e12e193ecccd8b34d9f2d7d"></a><!-- doxytag: member="PROG_ANS_OK" ref="a61566b6756dc861c5ac3193f363d593dac866266c2e12e193ecccd8b34d9f2d7d" args="" -->PROG_ANS_OK</em>&nbsp;</td><td>
+<p>Успешно (1) </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a917734923f866a92997fcdaaece8f224"></a><!-- doxytag: member="proto.h::ePROG_CMD" ref="a917734923f866a92997fcdaaece8f224" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="proto_8h.html#a917734923f866a92997fcdaaece8f224">ePROG_CMD</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Команды для обновления </p>
+<dl class="see"><dt><b>См. также:</b></dt><dd><a class="el" href="structs_p_a_c_k_e_t___p_r_o_g___c_m_d.html" title="Команда обновления.">sPACKET_PROG_CMD</a> </dd></dl>
+<dl><dt><b>Элементы перечислений: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a917734923f866a92997fcdaaece8f224a3ca3ad462c061026008b32fbdf5c6fa3"></a><!-- doxytag: member="PROG_CMD_NONE" ref="a917734923f866a92997fcdaaece8f224a3ca3ad462c061026008b32fbdf5c6fa3" args="" -->PROG_CMD_NONE</em>&nbsp;</td><td>
+<p>Нет команды (0) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a917734923f866a92997fcdaaece8f224a991938374ca8956bf3ad0af038891dde"></a><!-- doxytag: member="PROG_CMD_ENTER" ref="a917734923f866a92997fcdaaece8f224a991938374ca8956bf3ad0af038891dde" args="" -->PROG_CMD_ENTER</em>&nbsp;</td><td>
+<p>Начать обновление (1) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a917734923f866a92997fcdaaece8f224a25daa9263db16c12e8158993b51f87fa"></a><!-- doxytag: member="PROG_CMD_ABORT" ref="a917734923f866a92997fcdaaece8f224a25daa9263db16c12e8158993b51f87fa" args="" -->PROG_CMD_ABORT</em>&nbsp;</td><td>
+<p>Прервать обновление (2) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a917734923f866a92997fcdaaece8f224a8bb4b63bc04c94cc0ce9dd3972534403"></a><!-- doxytag: member="PROG_CMD_STATE" ref="a917734923f866a92997fcdaaece8f224a8bb4b63bc04c94cc0ce9dd3972534403" args="" -->PROG_CMD_STATE</em>&nbsp;</td><td>
+<p>Получить состояние (3) </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae03270d052115afe4da7c107ea8bbd8d"></a><!-- doxytag: member="proto.h::ePROG_RESULT" ref="ae03270d052115afe4da7c107ea8bbd8d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="proto_8h.html#ae03270d052115afe4da7c107ea8bbd8d">ePROG_RESULT</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Результат обновления </p>
+<dl class="see"><dt><b>См. также:</b></dt><dd><a class="el" href="structs_p_a_c_k_e_t___p_r_o_g___a_n_s.html" title="Ответ на команду обновления.">sPACKET_PROG_ANS</a> </dd></dl>
+<dl><dt><b>Элементы перечислений: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="ae03270d052115afe4da7c107ea8bbd8da708862cce9c6521946e4fc94f45bd6cc"></a><!-- doxytag: member="PROG_RESULT_OK" ref="ae03270d052115afe4da7c107ea8bbd8da708862cce9c6521946e4fc94f45bd6cc" args="" -->PROG_RESULT_OK</em>&nbsp;</td><td>
+<p>Успешно (0) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ae03270d052115afe4da7c107ea8bbd8dad4f4cf69439ab7037c83cae9bb2991da"></a><!-- doxytag: member="PROG_RESULT_FAIL_CRC32" ref="ae03270d052115afe4da7c107ea8bbd8dad4f4cf69439ab7037c83cae9bb2991da" args="" -->PROG_RESULT_FAIL_CRC32</em>&nbsp;</td><td>
+<p>Ошибка CRC32 (1) </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a003a765b36dbecedd8ff21d23dc8850b"></a><!-- doxytag: member="proto.h::ePROG_STATE" ref="a003a765b36dbecedd8ff21d23dc8850b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="proto_8h.html#a003a765b36dbecedd8ff21d23dc8850b">ePROG_STATE</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Состояние обновления </p>
+<dl class="see"><dt><b>См. также:</b></dt><dd><a class="el" href="structs_p_a_c_k_e_t___p_r_o_g___a_n_s.html" title="Ответ на команду обновления.">sPACKET_PROG_ANS</a> </dd></dl>
+<dl><dt><b>Элементы перечислений: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a003a765b36dbecedd8ff21d23dc8850babc82d7160692c69b0822e46c8138ad8b"></a><!-- doxytag: member="PROG_STATE_IDLE" ref="a003a765b36dbecedd8ff21d23dc8850babc82d7160692c69b0822e46c8138ad8b" args="" -->PROG_STATE_IDLE</em>&nbsp;</td><td>
+<p>Обновление не запущено (0) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a003a765b36dbecedd8ff21d23dc8850ba15bd74fcae8d0fa009319d4d09478317"></a><!-- doxytag: member="PROG_STATE_ENTER" ref="a003a765b36dbecedd8ff21d23dc8850ba15bd74fcae8d0fa009319d4d09478317" args="" -->PROG_STATE_ENTER</em>&nbsp;</td><td>
+<p>Обновление подготавливается (1) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a003a765b36dbecedd8ff21d23dc8850baa7164f81a87f44551e4b9a1b49a9357e"></a><!-- doxytag: member="PROG_STATE_READY" ref="a003a765b36dbecedd8ff21d23dc8850baa7164f81a87f44551e4b9a1b49a9357e" args="" -->PROG_STATE_READY</em>&nbsp;</td><td>
+<p>Готовность (2) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a003a765b36dbecedd8ff21d23dc8850ba6071f45565c3bbc0c39fcfa7ab90eea8"></a><!-- doxytag: member="PROG_STATE_WRITE" ref="a003a765b36dbecedd8ff21d23dc8850ba6071f45565c3bbc0c39fcfa7ab90eea8" args="" -->PROG_STATE_WRITE</em>&nbsp;</td><td>
+<p>Запись порции данных (3) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a003a765b36dbecedd8ff21d23dc8850bad89522cc47ff3732e13418365a8785cb"></a><!-- doxytag: member="PROG_STATE_DONE" ref="a003a765b36dbecedd8ff21d23dc8850bad89522cc47ff3732e13418365a8785cb" args="" -->PROG_STATE_DONE</em>&nbsp;</td><td>
+<p>Получены все данные (4) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a003a765b36dbecedd8ff21d23dc8850ba79da70b8d7a5733b82c46851f4267733"></a><!-- doxytag: member="PROG_STATE_RESULT" ref="a003a765b36dbecedd8ff21d23dc8850ba79da70b8d7a5733b82c46851f4267733" args="" -->PROG_STATE_RESULT</em>&nbsp;</td><td>
+<p>Состояние (5) </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a49d2a05788cb5940139bc40ceb80cd48"></a><!-- doxytag: member="proto.h::ePROG_TARGET" ref="a49d2a05788cb5940139bc40ceb80cd48" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="proto_8h.html#a49d2a05788cb5940139bc40ceb80cd48">ePROG_TARGET</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Объект обновления </p>
+<dl class="see"><dt><b>См. также:</b></dt><dd><a class="el" href="structs_p_a_c_k_e_t___p_r_o_g___c_m_d.html" title="Команда обновления.">sPACKET_PROG_CMD</a>, <a class="el" href="structs_p_a_c_k_e_t___p_r_o_g___a_n_s.html" title="Ответ на команду обновления.">sPACKET_PROG_ANS</a>, <a class="el" href="structs_p_a_c_k_e_t___p_r_o_g___d_a_t_a.html" title="Данные для обновления.">sPACKET_PROG_DATA</a> </dd></dl>
+<dl><dt><b>Элементы перечислений: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a49d2a05788cb5940139bc40ceb80cd48a21e636cf57aafa7bf87b4c5790969704"></a><!-- doxytag: member="PROG_TARGET_IMAGE" ref="a49d2a05788cb5940139bc40ceb80cd48a21e636cf57aafa7bf87b4c5790969704" args="" -->PROG_TARGET_IMAGE</em>&nbsp;</td><td>
+<p>Обновление прошивки (0) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a49d2a05788cb5940139bc40ceb80cd48a47663433a7b918e5e98a37a4ef35d213"></a><!-- doxytag: member="PROG_TARGET_FONT" ref="a49d2a05788cb5940139bc40ceb80cd48a47663433a7b918e5e98a37a4ef35d213" args="" -->PROG_TARGET_FONT</em>&nbsp;</td><td>
+<p>Обновление сборки шрифтов (1) </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a49d2a05788cb5940139bc40ceb80cd48ac1138b569e1a4e8afde600320ea4e349"></a><!-- doxytag: member="PROG_TARGET_CONFIG" ref="a49d2a05788cb5940139bc40ceb80cd48ac1138b569e1a4e8afde600320ea4e349" args="" -->PROG_TARGET_CONFIG</em>&nbsp;</td><td>
+<p>Обновление конфигурации (2) </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Структуры данных</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Макросы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация по Протокол мегатабло. Последние изменения: Wed Jun 15 2016 08:57:01. Создано системой&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
+</body>
+</html>

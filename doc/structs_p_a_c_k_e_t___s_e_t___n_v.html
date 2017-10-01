@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Протокол мегатабло: Структура sPACKET_SET_NV</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.2 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Структуры&#160;данных</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Структуры&#160;данных</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;структур&#160;данных</span></a></li>
+      <li><a href="functions.html"><span>Поля&#160;структур</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Поля данных</a>  </div>
+  <div class="headertitle">
+<h1>Структура sPACKET_SET_NV</h1>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="sPACKET_SET_NV" -->
+<p>Установка энергонезависимых данных. Ответ на команду установки энергонезависимых данных передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___n_v.html" title="Ответ на запрос энергонезависимых данных.">sPACKET_ANS_NV</a>.  
+<a href="#_details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+Поля данных</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b6c5b67f70fd58a8946361357623102"></a><!-- doxytag: member="sPACKET_SET_NV::mac" ref="a6b6c5b67f70fd58a8946361357623102" args="" -->
+<a class="el" href="structs_m_a_c___a_d_r.html">sMAC_ADR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___n_v.html#a6b6c5b67f70fd58a8946361357623102">mac</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">MAC-адрес контроллера <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30c24b34b9317d705918ad4b7c29d6be"></a><!-- doxytag: member="sPACKET_SET_NV::cmd" ref="a30c24b34b9317d705918ad4b7c29d6be" args="" -->
+<a class="el" href="type_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___n_v.html#a30c24b34b9317d705918ad4b7c29d6be">cmd</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">команда <a class="el" href="proto_8h.html#a8e200e06b13bfeaa5d61a6a20a290b84" title="Установка энергонезависимых данных (9)">ETH_SET_NV</a>. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c40fb8c2f27416a01ac3f81c78d4614"></a><!-- doxytag: member="sPACKET_SET_NV::type" ref="a7c40fb8c2f27416a01ac3f81c78d4614" args="" -->
+<a class="el" href="type_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___n_v.html#a7c40fb8c2f27416a01ac3f81c78d4614">type</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">тип устройства <a class="el" href="proto_8h.html#ae30ed98ab74e1769c393411965f6156c" title="Тип табло (6)">ETH_TABLO_TYPE</a>. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3563017172d60ef246ca6580169e52b"></a><!-- doxytag: member="sPACKET_SET_NV::p_id" ref="af3563017172d60ef246ca6580169e52b" args="" -->
+<a class="el" href="type_8h.html#ad342ac907eb044443153a22f964bf0af">DWORD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___n_v.html#af3563017172d60ef246ca6580169e52b">p_id</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">идентификатор пакета (устанавливается ПК) <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ef93940d3da105ebfa128c5f9285e63"></a><!-- doxytag: member="sPACKET_SET_NV::bright" ref="a5ef93940d3da105ebfa128c5f9285e63" args="" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_p_a_c_k_e_t___s_e_t___n_v.html#a5ef93940d3da105ebfa128c5f9285e63">bright</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">яркость <a class="el" href="_p_a_g_e__b_r_i_g_h_t.html">Яркость табло.</a>. <br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Подробное описание</h2>
+<p>Установка энергонезависимых данных. Ответ на команду установки энергонезависимых данных передается в пакете <a class="el" href="structs_p_a_c_k_e_t___a_n_s___n_v.html" title="Ответ на запрос энергонезависимых данных.">sPACKET_ANS_NV</a>. </p>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Структуры данных</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Макросы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация по Протокол мегатабло. Последние изменения: Wed Jun 15 2016 08:57:01. Создано системой&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
+</body>
+</html>

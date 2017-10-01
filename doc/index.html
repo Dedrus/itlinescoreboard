@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Протокол мегатабло: Описание протокола взаимодействия с табло.</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.2 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li class="current"><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="annotated.html"><span>Структуры&#160;данных</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<h1>Описание протокола взаимодействия с табло. </h1>  </div>
+</div>
+<div class="contents">
+<h3 class="version">(для интеграции с другими системами по Ethernet-каналу) </h3><dl class="note"><dt><b>Заметки:</b></dt><dd>Протокол действителен для табло с прошивкой <b>u653</b> (мегапрошивка). </dd></dl>
+<dl class="author"><dt><b>Автор:</b></dt><dd>Шанин А.М.<br/>
+ email: <a href="mailto:adnega@mail.ru">adnega@mail.ru</a> </dd></dl>
+<dl class="version"><dt><b>Версия:</b></dt><dd>v0.2 </dd></dl>
+<dl class="date"><dt><b>Дата:</b></dt><dd>15.06.2016г.</dd></dl>
+<p><div class="fragment"><pre class="fragment"></pre></div></p>
+<h2><a class="anchor" id="SEC_LINK"></a>
+Взаимодействие с табло.</h2>
+<p>Табло может взаимодействовать с управляющим ПК по сети Ethernet. Для обмена информацией используютя UDP-датаграммы (протокол UDP/IP).</p>
+<p>Табло может принимать команды:</p>
+<ul>
+<li>адресованные ему персонально,</li>
+<li>адресованные всем табло его типа (например, при поиске всех табло данного типа в сети),</li>
+<li>адресованные всем табло (например, при поиске всех табло в сети).</li>
+</ul>
+<p>Табло принимает команды на UDP-порт <a class="el" href="type_8h.html#ae255577cd463921d0854251e8283182d" title="Номер управляющего UDP-порта (5001)">ETH_TABLO_CONTROL_PORT</a>. Ответы отправляются в тот порт, с которого они были отправлены с управляющего ПК.</p>
+<p>Пример (<em>IP-ПК</em> - IP-адрес управляющего ПК; <em>UDP-ПК</em> - UDP-порт на управляющем ПК; <em>IP-ТАБЛО</em> - IP-адрес табло):</p>
+<ul>
+<li><b>"запрос ПК"</b> <em>IP-ПК</em> : <em>UDP-ПК</em> -&gt; <em>IP-ТАБЛО</em> : <a class="el" href="type_8h.html#ae255577cd463921d0854251e8283182d" title="Номер управляющего UDP-порта (5001)">ETH_TABLO_CONTROL_PORT</a>.</li>
+<li><b>"ответ табло"</b> <em>IP-ТАБЛО</em> : <a class="el" href="type_8h.html#ae255577cd463921d0854251e8283182d" title="Номер управляющего UDP-порта (5001)">ETH_TABLO_CONTROL_PORT</a> -&gt; <em>IP-ПК</em> : <em>UDP-ПК</em>.</li>
+</ul>
+<p>Как правило взаимодействие происходит в двух вариантах:</p>
+<ul>
+<li><em>запрос</em> данных;</li>
+<li><em>установка</em> данных.</li>
+</ul>
+<p>Команды <em>запроса</em> данных начинаются с <b>ETH_GET_</b> (пакеты соответственно с <b>sPACKET_GET_</b>). <br/>
+ Команды <em>установки</em> данных начинаются с <b>ETH_SET_</b> (пакеты соответственно с <b>sPACKET_SET_</b>). <br/>
+ В ответ на команды <em>запроса</em> и на команды <em>установки</em> возвращается ответ, начинающийся с <b>ETH_ANS_</b> (пакеты соответственно с <b>sPACKET_ANS_</b>).</p>
+<p>Для установки нового режима отображения служит команда <a class="el" href="proto_8h.html#a36f767cd4687a3111b5503877bfdc871" title="Установка текущего режима (52)">ETH_SET_MODE</a> (пакет <a class="el" href="structs_p_a_c_k_e_t___s_e_t___m_o_d_e.html" title="Установка текущего режима. Ответ на команду установки текущего режима передается в пакете sPACKET_ANS...">sPACKET_SET_MODE</a>). <br/>
+</p>
+<dl class="warning"><dt><b>Предупреждения:</b></dt><dd>Перечень доступных режимов, номера и типы связанных с этими режимами объектов можно узнать из конфигурации.</dd></dl>
+<p><div class="fragment"><pre class="fragment"></pre></div></p>
+<h2><a class="anchor" id="SEC_OBJECTS"></a>
+Объекты табло.</h2>
+<p>Табло поддерживает несколько источников данных для отображения. К источникам, управляемым по Ethernet, относятся:</p>
+<ul>
+<li><b>NVSTR</b> - энергонезависые ASCII-Z строки (сохраняются при потере питания). Размер строки <b>NVSTR</b> <a class="el" href="type_8h.html#ae8cd35da93c2d47de7cef4ebaffa77a5" title="Размер переменной типа NVSTR (1024)">NVSTR_SIZE</a>. Число строк <b>NVSTR</b> <a class="el" href="type_8h.html#a954865c5e1f7795dd39917d7045afc42" title="Число переменных типа NVSTR (2)">NVSTR_NUM</a>.</li>
+<li><b>RSTR</b> - оперативные ASCII-Z строки (обнуляются при потере питания, перезагрузке). Размер строки <b>RSTR</b> <a class="el" href="type_8h.html#ad40e478466b64b8e22a37ff1b518608d" title="Размер переменной типа RSTR (128)">RSTR_SIZE</a>. Число строк <b>RSTR</b> <a class="el" href="type_8h.html#a80512af7f20906bd62769901f855d461" title="Число переменных типа RSTR (32)">RSTR_NUM</a>.</li>
+<li><b>CSTR</b> - константные ASCII-Z строки (не могут быть изменены, жестко заданы в конфигурации). Размер строки <b>CSTR</b> <a class="el" href="type_8h.html#a6004c13f37c18c6a78194024871023ba" title="Размер переменной типа CSTR (128)">CSTR_SIZE</a>. Число строк <b>CSTR</b> <a class="el" href="type_8h.html#a1ff6d70f4aeaba4574afcedee4da167b" title="Число переменных типа CSTR (32)">CSTR_NUM</a>.</li>
+<li><b>NVNUM</b> - энергонезависые 32-битные числа (сохраняются при потере питания). Число переменных <b>NVNUM</b> <a class="el" href="type_8h.html#ab80adf6ec8ec08190630fe87598c9877" title="Число переменных типа NVNUM (256)">NVNUM_SIZE</a>.</li>
+<li><b>RNUM</b> - оперативные 32-битные числа (обнуляются при потере питания, перезагрузке). Число переменных <b>RNUM</b> <a class="el" href="type_8h.html#a95c3d888fafde011ea18273e520d99e0" title="Число переменных типа NUM (256)">RNUM_SIZE</a>.</li>
+<li><b>CNUM</b> - константные 32-битные числа (не могут быть изменены, жестко заданы в конфигурации). Число переменных <b>CNUM</b> <a class="el" href="type_8h.html#ad07aca7eb7c68ba0df94d412b647b738" title="Число переменных типа CNUM (256)">CNUM_SIZE</a>.</li>
+<li><b>TIMER</b> - универсальные таймеры для отсчета времени. Число переменных <b>TIMER</b> <a class="el" href="type_8h.html#a1c7c6e4d297f71543388ab3581612010" title="Число переменных типа TIMER (64)">TIMER_NUM</a>.</li>
+</ul>
+<p>Для объектов доступны команды <em>запроса</em> (чтения) и <em>установки</em> (записи) (за исключением <b>CSTR</b> и <b>CNUM</b>).</p>
+<p>В пакетах передаются массивы элементов. Для указания номера объекта в пакете используется вспомогательный массив индексов. Индексы отсчитываются от нуля. Если индекс больше допустимого, то данный элемент массива игнорируется. Рекомендуется для таких целей использовать индекс <b>0xFF</b> для <b>NVSTR</b>, <b>RSTR</b>, <b>CSTR</b>, <b>TIMER</b>, и <b>0xFFFF</b> для <b>NVNUM</b>, <b>RNUM</b>, <b>CNUM</b>.</p>
+<p>Пример запроса строк <b>RSTR:</b> </p>
+<ul>
+<li><em>запрос</em> : <br/>
+ <b>index</b> - 0, 1, 12, 30, 78, 0xFF, 0xFF, 0xFF - запросить строки с индексами 0, 1, 12, 30, 78.</li>
+<li><em>ответ</em> : <br/>
+ <b>index</b> - 0, 1, 12, 30, 0xFF (т.к. 78 строки RSTR не существует), 0xFF, 0xFF, 0xFF; <br/>
+ <b>profile</b> - профили строк с индексами 0, 1, 12, 30, und, und, und, und; <br/>
+ <b>rstr</b> - содержимое строк с индексами 0, 1, 12, 30, '', '', '', ''. </li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Структуры данных</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Макросы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация по Протокол мегатабло. Последние изменения: Wed Jun 15 2016 08:57:01. Создано системой&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
+</body>
+</html>
